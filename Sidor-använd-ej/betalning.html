@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://use.typekit.net/kjj0vqk.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/kjj0vqk.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>BrantaBerget</title>
+  </head>
+
+  <body>
+    <nav
+      class="navbar navbar-expand-lg fixed-top navbar-dark border-bottom bg-dark bg-opacity-50"
+    >
+      <div class="container">
+        <div>
+          <label class="switch">
+            <input type="checkbox" id="darkModeToggle" />
+            <span class="slider"></span>
+          </label>
+        </div>
+
+        <a href="index.html" class="navbar-brand">
+          <img
+            src="img/logo_light_notitle.svg"
+            id="logo-svg"
+            alt="brantabergets logotyp"
+          />
+        </a>
+        <button
+          class="navbar-toggler border-0"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">Hem</a>
+            </li>
+            <li class="nav-item">
+              <a href="bokningssida.html" class="nav-link">Boka</a>
+            </li>
+            <li class="nav-item">
+              <a href="vaffelstuga.html" class="nav-link">Mat & Dryck</a>
+            </li>
+            <li class="nav-item">
+              <a href="events.html" class="nav-link">Events</a>
+            </li>
+            <li class="nav-item">
+              <a href="pistkarta.html" class="nav-link">Pistkarta</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+<!--     <div class="bg-image landing-image min-vh-100">
+ -->      <div class="container d-flex flex-column min-vh-100 justify-content-center no-gutters">
+                <h1 class="betalning mb-4">Betalning</h1>
+
+            <div class="betal-info d-flex justify-content-between"> <!-- för båda divs -->
+                <div class="kunduppgifter w-50 rounded-4 p-4"> <!-- KUND uppgifter -->
+                    <h3>Kunduppgifter</h3>
+                    <div> 
+                        <form>
+                            <div class="row">
+                                <div class="col">
+                                    <label for="name">Namn</label><br>
+                                    <input class="rounded-4" type="text" id="name" name="name"><br>
+                                </div>
+    
+                                <div class="col">
+                                    <label for="epost">Epost</label><br>
+                                    <input class="rounded-4" type="text" id="epost" name="epost">
+                                </div> 
+                            </div>
+
+
+                            <div class="row">
+                                <div class="col">
+                                    <label for="mobilnr">Mobilnummer</label><br>
+                                    <input class="rounded-4" type="text" id="mobilnr" name="mobilnr">
+                                </div>
+    
+                                <div class="col">
+                                    <label for="adress">Adress</label><br>
+                                    <input class="rounded-4" type="text" id="adress" name="adress"><br>
+                                </div>
+                            </div>
+
+
+
+                            <div class="row">
+                                <div class="col">
+                                    <label for="postnr">Postnummer</label><br>
+                                    <input class="rounded-4" type="text" id="postnr" name="postnr">
+                                </div>
+    
+                                <div class="col">
+                                    <label for="ort">Ort</label><br>
+                                    <input class="rounded-4" type="text" id="ort" name="ort">
+                                </div>
+                            </div>
+
+
+                          </form>
+                    </div>
+                </div>
+
+                <div class="kortuppgifter rounded-4 p-4"> <!-- KORT uppgifter -->
+                    <h3>Kortuppgifter</h3>
+                    <div>
+                        <form>
+                            <div class="row">
+                                <div class="col">
+                                    <label for="kortnr">Kortnummer</label><br>
+                                    <input class="rounded-4" type="text" id="kortnr" name="kortnr"><br>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col">
+                                    <label for="kort-namn">Namn på kortet</label><br>
+                                    <input class="rounded-4" type="text" id="kort-namn" name="kort-namn">
+                                </div>
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col">
+                                    <label for="cvc">CVC</label><br>
+                                    <input class="rounded-4" type="text" id="cvc" name="cvc">
+                                </div>
+    
+                                <div class="col">
+                                    <label for="expire-date">Utgångsdatum</label><br>
+                                    <input class="rounded-4" type="text" id="expire-date" name="expire-date"><br>
+                                </div>
+    
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="align-self-center">
+                <a href="bokningen.html">
+                    <button class="btn btn-outline-light rounded-5 px-5 py-2 my-3">
+                    Betala
+                    </button>
+                </a>
+            </div>
+
+      </div>
+<!--     </div>
+ -->    <main>
+      <div class="container d-flex align-items-center flex-column">
+<!--         <img
+            src="img/blatt_monster.svg"
+            id="darkmode_svg-pattern-blue"
+            class="mx-0 position-absolute"
+            style="position: absolute; width: 100vw"
+            alt=""
+          />
+          <img
+            src="img/rosa_monster.svg"
+            id="darkmode_svg-pattern-pink"
+            class="mx-0"
+            style="position: absolute; width: 100vw"
+            alt=""
+          /> -->
+
+        
+    
+      </div>
+    </main>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/darkmode.js"></script>
+  </body>
+</html>

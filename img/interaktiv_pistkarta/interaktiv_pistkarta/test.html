@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pistkartan</title>
+    <link rel="stylesheet" href="/style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Futura&display=swap');
+        #tooltip {
+            position: absolute;
+            display: none;
+            background-color: #fff;
+            border: 1.5px solid #000;
+            padding: 5px;
+            font-family: Futura, sans-serif;
+            font-size: 12px;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="tooltip"></div>
+    <div id="svgContainer">
+    <object id="svgObject" type="image/svg+xml" data="pistkarta.svg" width="800" height="600"></object>
+</div>
+    <script src="javascript.js" defer></script>
+</body>
+</html>
