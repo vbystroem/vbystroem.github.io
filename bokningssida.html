@@ -50,36 +50,30 @@
     </div>
   </nav>
   <div class="bg-image bokningsida-image min-vh-100">
-    <div
-      class="container d-flex flex-column min-vh-100 justify-content-center no-gutters">
-          <h1 class="text-light text-center">
-              Välkommen till bokningen
-          </h1>
-          
+    <div class="container d-flex flex-column min-vh-100 justify-content-center no-gutters">
+      <h1 class="text-light text-center">
+        Välkommen till bokningen
+      </h1>
+
     </div>
   </div>
-  
+
 
   <main>
 
     <div class=" container col-md-8 col-xl-6 col-xxl-4 d-flex align-items-end">
-   
+
     </div>
-    <div
-        class=" align-items-lg-stretch">
-        <img
-          src="img/blatt_monster.svg"
-          id="darkmode_svg-pattern-blue"
-          class="mx-0 d-none d-md-block"
-          style="position: absolute; width: 100vw; height: auto; transform: translateY(0)"
-          alt=""
-        />
-      </div>
-      
+    <div class=" align-items-lg-stretch">
+      <img src="img/blatt_monster.svg" id="darkmode_svg-pattern-blue" class="mx-0 d-none d-md-block"
+        style="position: absolute; width: 100vw; height: auto; transform: translateY(0)" alt="" />
+    </div>
 
 
-    <form action="bokning_genomford.html" name="myForm" id="bokningsForm" class="container col-md-8 col-xl-6 col-xxl-4 mb-5">
-       
+
+    <form action="bokning_genomford.html" name="myForm" id="bokningsForm"
+      class="container col-md-8 col-xl-6 col-xxl-4 mb-5">
+
       <h2 class="intro-text mb-3">Välj datum</h2>
       <p class="intro-text">Steg 1 av 5</p>
       <div class="datePicker d-flex flex-row">
@@ -89,33 +83,34 @@
             class="form-control bg-dark border-light border-opacity-25 text-light">
         </div>
         <div class="formBox mb-3 w-25">
-          <label for="daySpan" class ="intro-text form-label">Antal Dagar</label>
+          <label for="daySpan" class="intro-text form-label">Antal Dagar</label>
           <input type="number" id="daySpan" name="Antal dagar"
             class="form-control bg-dark border-light border-opacity-25 text-light">
         </div>
       </div>
-      
+
       <div class="mb-3">
-        <input class="" type="checkbox" id="liftkort" name="liftkort"/>
+        <input class="" type="checkbox" id="liftkort" name="liftkort" />
         <label class="form-label" for="liftkort">Jag vill boka liftkort</label>
       </div>
 
-      <a class ="mb-5 btn btn-dark border-light border-opacity-25" type="button" data-bs-toggle="collapse"
+      <a class="mb-5 btn btn-dark border-light border-opacity-25" type="button" data-bs-toggle="collapse"
         href="#radioCollapse" aria-expanded="false" aria-controls="collapseExample">
         Välj paket
       </a>
-      
-  
-      
+
+
+
 
       <div id="radioCollapse" class="collapse">
         <fieldset class="packageRadio mb-3">
           <div class="mb-5">
             <h2 class="intro-text">Välj Utrustning</h2>
             <p class="intro-text">Steg 2 av 5</p>
-            
+
             <label class="form-label w-100 mb-3" for="noEquipment">
-              <input class="card-input-element d-none form-control" type="radio" id="noEquipment" name="packageType" value="noEquipment" checked="checked"/>
+              <input class="card-input-element d-none form-control" type="radio" id="noEquipment" name="packageType"
+                value="noEquipment" checked="checked" />
               <div class="card bg-dark border-light border-opacity-25">
                 <div class="card-body d-flex flex-row align-items-center">
                   <img src="\img\kids-skiing.jpg" style="max-height: 15vh;" alt="">
@@ -129,7 +124,8 @@
 
             <h2 class="intro-text">Skidor</h2>
             <label class="form-label w-100 mb-3" for="skiPackageBarn">
-              <input class="card-input-element d-none form-control" type="radio" id="skiPackageBarn" name="packageType" value="Barnpaketet" />
+              <input class="card-input-element d-none form-control" type="radio" id="skiPackageBarn" name="packageType"
+                value="Barnpaketet" />
               <div class="card bg-dark border-light border-opacity-25">
                 <div class="card-body d-flex flex-row align-items-center">
                   <img src="\img\kids-skiing.jpg" style="max-height: 15vh;" alt="">
@@ -142,7 +138,8 @@
             </label>
 
             <label for="skiPackageUngdom" class="form-label w-100 mb-3">
-              <input class="card-input-element d-none form-control" type="radio" id="skiPackageUngdom" name="packageType" value="Ungdomspaketet" />
+              <input class="card-input-element d-none form-control" type="radio" id="skiPackageUngdom"
+                name="packageType" value="Ungdomspaketet" />
               <div class="card bg-dark border-light border-opacity-25 text-light">
                 <div class="card-body d-flex flex-row align-items-center">
                   <img src="img\eirik-uhlen-U5YfxhSze8k-unsplash.jpg" style="max-height: 15vh;" alt="">
@@ -168,287 +165,284 @@
               </div>
             </label>
           </div>
-          <div
-        class=" align-items-lg-stretch">
-       
-          
-          <div class="mb-5">
-            <h2 class="intro-text">Snowboard</h2>
+          <div class=" align-items-lg-stretch">
 
-            <label class="form-label w-100 mb-3" for="sbPackageBarn">
-              <input class="card-input-element d-none form-control" type="radio" id="sbPackageBarn" name="packageType" value="Barnpaketet" />
-              <div class="card bg-dark border-light border-opacity-25 text-light">
-                <div class="card-body d-flex flex-row align-items-center">
-                  <img src="/img/snowboard-kid.jpg" style="max-height: 15vh;" alt="">
-                  <div class="ms-3">
-                    <h4 class="">Barnpaketet</h4>
-                    <p class="card-text lh-1">- Snowboard, skor och hjälm</p>
+
+            <div class="mb-5">
+              <h2 class="intro-text">Snowboard</h2>
+
+              <label class="form-label w-100 mb-3" for="sbPackageBarn">
+                <input class="card-input-element d-none form-control" type="radio" id="sbPackageBarn" name="packageType"
+                  value="Barnpaketet" />
+                <div class="card bg-dark border-light border-opacity-25 text-light">
+                  <div class="card-body d-flex flex-row align-items-center">
+                    <img src="/img/snowboard-kid.jpg" style="max-height: 15vh;" alt="">
+                    <div class="ms-3">
+                      <h4 class="">Barnpaketet</h4>
+                      <p class="card-text lh-1">- Snowboard, skor och hjälm</p>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </label>
-          
+              </label>
 
-          <label  for="sbPackageUngdom" class="form-label w-100 mb-3">
-            <input class="card-input-element d-none form-control" type="radio" id="sbPackageUngdom" name="packageType" value="Ungdomspaketet" />
-            <div class="card bg-dark border-light border-opacity-25 text-light">
-              <div class="card-body d-flex flex-row align-items-center">
-                <img src="img\snowboard-man.jpg" style="max-height: 15vh;" alt="">
-                <div class="ms-3">
-                  <h4 class="">Ungdomspaketet</h4>
-                  <p class="card-text lh-1">- Snowboard, skor och hjälm</p>
+
+              <label for="sbPackageUngdom" class="form-label w-100 mb-3">
+                <input class="card-input-element d-none form-control" type="radio" id="sbPackageUngdom"
+                  name="packageType" value="Ungdomspaketet" />
+                <div class="card bg-dark border-light border-opacity-25 text-light">
+                  <div class="card-body d-flex flex-row align-items-center">
+                    <img src="img\snowboard-man.jpg" style="max-height: 15vh;" alt="">
+                    <div class="ms-3">
+                      <h4 class="">Ungdomspaketet</h4>
+                      <p class="card-text lh-1">- Snowboard, skor och hjälm</p>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-          </label>
+              </label>
 
-          <label for="sbPackageVuxen" class="form-label w-100 mb-3">
-            <input class="card-input-element d-none form-control" type="radio" id="sbPackageVuxen" name="packageType" value="Vuxenpaketet"/>
-            <div class="card bg-dark border-light border-opacity-25 text-light">
-              <div class="card-body d-flex flex-row align-items-center">
-                <img src="img\snowboard-adult.jpg" style="max-height: 15vh;" alt="">
-                <div class="ms-3">
-                  <h4 class="">Vuxenpaketet</h4>
-                  <p class="card-text lh-1">- Snowboard, skor och hjälm</p>
+              <label for="sbPackageVuxen" class="form-label w-100 mb-3">
+                <input class="card-input-element d-none form-control" type="radio" id="sbPackageVuxen"
+                  name="packageType" value="Vuxenpaketet" />
+                <div class="card bg-dark border-light border-opacity-25 text-light">
+                  <div class="card-body d-flex flex-row align-items-center">
+                    <img src="img\snowboard-adult.jpg" style="max-height: 15vh;" alt="">
+                    <div class="ms-3">
+                      <h4 class="">Vuxenpaketet</h4>
+                      <p class="card-text lh-1">- Snowboard, skor och hjälm</p>
+                    </div>
+                  </div>
                 </div>
-              </div>
+              </label>
             </div>
-          </label>
-        </div>
-      </fieldset>
-     
+        </fieldset>
 
 
-      
 
-      <fieldset class="">
-        <h3 class="intro-text">Vi behöver information om dig</h3>
-        <p class="intro-text">Steg 3 av 5</p>
-        <div class="d-flex flex-row mb-3 justify-content-between">
-          <div class="formBox me-2">
-            <label for="age" class="form-label">Ålder</label>
-            <input class="form-control bg-dark border-light border-opacity-25 text-light" type="date" id="age"
-              placeholder="Ålder" required />
-          </div>
-          <div class="d-flex flex-row">
+
+
+        <fieldset class="">
+          <h3 class="intro-text">Vi behöver information om dig</h3>
+          <p class="intro-text">Steg 3 av 5</p>
+          <div class="d-flex flex-row mb-3 justify-content-between">
             <div class="formBox me-2">
-              <label class="form-label" for="shoeSize">Skostorlek</label>
-              <select class="form-control bg-dark border-light border-opacity-25 text-light" name="shoeSize"
-                id="shoeSize" required>
-                <option value="">Välj</option>
-                <option value="28">28</option>
-                <option value="29">29</option>
-                <option value="30">30</option>
-                <option value="31">31</option>
-                <option value="32">32</option>
-                <option value="33">33</option>
-                <option value="34">34</option>
-                <option value="35">35</option>
-                <option value="36">36</option>
-                <option value="37">37</option>
-                <option value="38">38</option>
-                <option value="39">39</option>
-                <option value="40">40</option>
-                <option value="41">41</option>
-                <option value="42">42</option>
-                <option value="43">43</option>
-                <option value="44">44</option>
-                <option value="45">45</option>
-                <option value="46">46</option>
-                <option value="47">47</option>
-                <option value="48">48</option>
-                <option value="49">49</option>
-                <option value="50">50</option>
-                <option value="51">51</option>
-                <option value="52">52</option>
-              </select>
+              <label for="age" class="form-label">Ålder</label>
+              <input class="form-control bg-dark border-light border-opacity-25 text-light" type="date" id="age"
+                placeholder="Ålder" required />
             </div>
-            <div class="formBox me-2">
-              <label class="form-label" for="height">Längd</label>
-              <select class="form-control bg-dark border-light border-opacity-25 text-light" name="height" id="height"
-                required>
-                <option value="">Välj</option>
-                <option value="90">90cm</option>
-                <option value="95">95cm</option>
-                <option value="100">100cm</option>
-                <option value="105">105cm</option>
-                <option value="110">110cm</option>
-                <option value="115">115cm</option>
-                <option value="120">120cm</option>
-                <option value="125">125cm</option>
-                <option value="130">130cm</option>
-                <option value="135">135cm</option>
-                <option value="140">140cm</option>
-                <option value="145">145cm</option>
-                <option value="150">150cm</option>
-                <option value="155">155cm</option>
-                <option value="160">160cm</option>
-                <option value="165">165cm</option>
-                <option value="170">170cm</option>
-                <option value="175">175cm</option>
-                <option value="180">180cm</option>
-                <option value="185">185cm</option>
-                <option value="190">190cm</option>
-                <option value="195">195cm</option>
-                <option value="200">200cm</option>
-                <option value="205">205cm</option>
-                <option value="210">210cm</option>
-                <option value="215">215cm</option>
-              </select>
-            </div>
-            <div class="formBox">
-              <label class="form-label" for="weight">Vikt</label>
-              <select class="form-control bg-dark border-light border-opacity-25 text-light" name="weight" id="weight"
-                required>
-                <option value="">Välj</option>
-                <option value="10">10kg</option>
-                <option value="15">15kg</option>
-                <option value="20">20kg</option>
-                <option value="25">25kg</option>
-                <option value="30">30kg</option>
-                <option value="35">35kg</option>
-                <option value="40">40kg</option>
-                <option value="45">45kg</option>
-                <option value="50">50kg</option>
-                <option value="55">55kg</option>
-                <option value="60">60kg</option>
-                <option value="65">65kg</option>
-                <option value="70">75kg</option>
-                <option value="80">80kg</option>
-                <option value="85">85kg</option>
-                <option value="90">90kg</option>
-                <option value="95">95kg</option>
-                <option value="100">100kg</option>
-                <option value="105">105kg</option>
-                <option value="110">110kg</option>
-                <option value="115">115kg</option>
-                <option value="120">120kg</option>
-                <option value="125">125kg</option>
-                <option value="130">130kg</option>
-                <option value="135">135kg</option>
-                <option value="140">140kg</option>
-                <option value="145">145kg</option>
-                <option value="150">150kg</option>
-                <option value="155">155kg</option>
-                <option value="160">160kg</option>
-              </select>
+            <div class="d-flex flex-row">
+              <div class="formBox me-2">
+                <label class="form-label" for="shoeSize">Skostorlek</label>
+                <select class="form-control bg-dark border-light border-opacity-25 text-light" name="shoeSize"
+                  id="shoeSize" required>
+                  <option value="">Välj</option>
+                  <option value="28">28</option>
+                  <option value="29">29</option>
+                  <option value="30">30</option>
+                  <option value="31">31</option>
+                  <option value="32">32</option>
+                  <option value="33">33</option>
+                  <option value="34">34</option>
+                  <option value="35">35</option>
+                  <option value="36">36</option>
+                  <option value="37">37</option>
+                  <option value="38">38</option>
+                  <option value="39">39</option>
+                  <option value="40">40</option>
+                  <option value="41">41</option>
+                  <option value="42">42</option>
+                  <option value="43">43</option>
+                  <option value="44">44</option>
+                  <option value="45">45</option>
+                  <option value="46">46</option>
+                  <option value="47">47</option>
+                  <option value="48">48</option>
+                  <option value="49">49</option>
+                  <option value="50">50</option>
+                  <option value="51">51</option>
+                  <option value="52">52</option>
+                </select>
+              </div>
+              <div class="formBox me-2">
+                <label class="form-label" for="height">Längd</label>
+                <select class="form-control bg-dark border-light border-opacity-25 text-light" name="height" id="height"
+                  required>
+                  <option value="">Välj</option>
+                  <option value="90">90cm</option>
+                  <option value="95">95cm</option>
+                  <option value="100">100cm</option>
+                  <option value="105">105cm</option>
+                  <option value="110">110cm</option>
+                  <option value="115">115cm</option>
+                  <option value="120">120cm</option>
+                  <option value="125">125cm</option>
+                  <option value="130">130cm</option>
+                  <option value="135">135cm</option>
+                  <option value="140">140cm</option>
+                  <option value="145">145cm</option>
+                  <option value="150">150cm</option>
+                  <option value="155">155cm</option>
+                  <option value="160">160cm</option>
+                  <option value="165">165cm</option>
+                  <option value="170">170cm</option>
+                  <option value="175">175cm</option>
+                  <option value="180">180cm</option>
+                  <option value="185">185cm</option>
+                  <option value="190">190cm</option>
+                  <option value="195">195cm</option>
+                  <option value="200">200cm</option>
+                  <option value="205">205cm</option>
+                  <option value="210">210cm</option>
+                  <option value="215">215cm</option>
+                </select>
+              </div>
+              <div class="formBox">
+                <label class="form-label" for="weight">Vikt</label>
+                <select class="form-control bg-dark border-light border-opacity-25 text-light" name="weight" id="weight"
+                  required>
+                  <option value="">Välj</option>
+                  <option value="10">10kg</option>
+                  <option value="15">15kg</option>
+                  <option value="20">20kg</option>
+                  <option value="25">25kg</option>
+                  <option value="30">30kg</option>
+                  <option value="35">35kg</option>
+                  <option value="40">40kg</option>
+                  <option value="45">45kg</option>
+                  <option value="50">50kg</option>
+                  <option value="55">55kg</option>
+                  <option value="60">60kg</option>
+                  <option value="65">65kg</option>
+                  <option value="70">75kg</option>
+                  <option value="80">80kg</option>
+                  <option value="85">85kg</option>
+                  <option value="90">90kg</option>
+                  <option value="95">95kg</option>
+                  <option value="100">100kg</option>
+                  <option value="105">105kg</option>
+                  <option value="110">110kg</option>
+                  <option value="115">115kg</option>
+                  <option value="120">120kg</option>
+                  <option value="125">125kg</option>
+                  <option value="130">130kg</option>
+                  <option value="135">135kg</option>
+                  <option value="140">140kg</option>
+                  <option value="145">145kg</option>
+                  <option value="150">150kg</option>
+                  <option value="155">155kg</option>
+                  <option value="160">160kg</option>
+                </select>
+              </div>
             </div>
           </div>
+          <a class="text-light mb-3 btn btn-dark border-light border-opacity-25 rounded-5 px-5 py-2 my-3" type="button"
+            data-bs-toggle="collapse" href="#infoCollapse" aria-expanded="false" aria-controls="collapseExample">
+            Nästa
+          </a>
+        </fieldset>
+
+        <hr class="border-secondary w-75 mb-5">
+
+        <div id="infoCollapse" class="collapse">
+          <div class="d-flex justify-content-center justify-content-sm-cent justify-content-md-start mb-5">
+            <fieldset class="w-md-75">
+              <h2 class="intro-text mb-3">Dina uppgifter</h2>
+              <p class="intro-text">Steg 4 av 5</p>
+              <div class="formBox">
+
+                <div class="d-flex flex-row mb-2">
+                  <div class="formBoxInput me-3 col-6">
+                    <label class="form-label" for="fname">Förnamn</label>
+                    <input class="form-control bg-dark border-light border-opacity-25 text-light" type="text" id="fname"
+                      name="firstname" required>
+                  </div>
+
+                  <div class="formBoxInput col-6">
+                    <label class="form-label" for="lname">Efternamn</label>
+                    <input class="form-control bg-dark border-light border-opacity-25 text-light" type="text" id="lname"
+                      name="lastname" required>
+                  </div>
+                </div>
+
+                <div class="d-flex flex-row mb-2 w-100">
+                  <div class="formBoxInput me-3 col-8">
+                    <label class="form-label" for="email">Email</label>
+                    <input class="form-control bg-dark border-light border-opacity-25 text-light" type="email"
+                      id="email" name="email" required>
+                  </div>
+
+                  <div class="formBoxInput col-4">
+                    <label class="form-label" for="tel">Telefon</label>
+                    <input class="form-control bg-dark border-light border-opacity-25 text-light" type="tel" id="tel"
+                      name="telefonnr" required>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="address mb-2">
+                <div class="d-flex flex-row">
+                  <div class="formBoxInput me-3 col-9">
+                    <label class="form-label" for="address">Adress</label>
+                    <input class="form-control bg-dark border-light border-opacity-25 text-light" type="text"
+                      id="address" name="adress" required>
+                  </div>
+                  <div class="formBoxInput col-3">
+                    <label class="form-label" for="postalCode">Postnr</label>
+                    <input class="form-control bg-dark border-light border-opacity-25 text-light" type="text"
+                      id="postalCode" name="postnr" required>
+                  </div>
+                </div>
+
+              </div>
+              <div class="formBoxInput w-50 mb-5">
+                <label class="form-label" for="city">Stad</label>
+                <input class="form-control bg-dark border-light border-opacity-25 text-light" type="text" id="city"
+                  name="stad" required>
+              </div>
+
+              <a id="confirmButton" class="mb-5 btn btn-dark border-light border-opacity-25 rounded-5 px-5 py-2 my-3"
+                type="button" data-bs-toggle="collapse" href="#confirmCollapse" aria-expanded="false"
+                aria-controls="confirmCollapse">
+                Bekräfta dina val
+              </a>
+
+              <div id="confirmCollapse" class="collapse">
+
+                <div class="columns card p-5 text-light card-body bg-dark my-3 rounded-5 d-flex col-12  border border-light
+              border-opacity-50 d-flex justify-content-center" id="summary">
+              <button type="submit" class="btn btn-dark mt-3 rounded-5 py-2 px-5 border-light border-opacity-25"
+              id="btn">Boka</button>
+            </div>
+
+                
+
+              </div>
+
+
+            </fieldset>
+          </div>
         </div>
-        <a class="text-light mb-3 btn btn-dark border-light border-opacity-25 rounded-5 px-5 py-2 my-3" type="button" data-bs-toggle="collapse"
-          href="#infoCollapse" aria-expanded="false" aria-controls="collapseExample">
-          Nästa
-        </a>
-      </fieldset>
-
-      <hr class="border-secondary w-75 mb-5">
-
-      <div id="infoCollapse" class="collapse">
-        <div class="d-flex justify-content-center justify-content-sm-cent justify-content-md-start mb-5">
-          <fieldset class="w-md-75">
-            <h2 class="intro-text mb-3">Dina uppgifter</h2>
-            <p class="intro-text">Steg 4 av 5</p>
-            <div class="formBox">
-
-              <div class="d-flex flex-row mb-2">
-                <div class="formBoxInput me-3 col-6">
-                  <label class="form-label" for="fname">Förnamn</label>
-                  <input class="form-control bg-dark border-light border-opacity-25 text-light" type="text" id="fname"
-                    name="firstname" required>
-                </div>
-
-                <div class="formBoxInput col-6">
-                  <label class="form-label" for="lname">Efternamn</label>
-                  <input class="form-control bg-dark border-light border-opacity-25 text-light" type="text" id="lname"
-                    name="lastname" required>
-                </div>
-              </div>
-
-              <div class="d-flex flex-row mb-2 w-100">
-                <div class="formBoxInput me-3 col-8">
-                  <label class="form-label" for="email">Email</label>
-                  <input class="form-control bg-dark border-light border-opacity-25 text-light" type="email" id="email"
-                    name="email" required>
-                </div>
-
-                <div class="formBoxInput col-4">
-                  <label class="form-label" for="tel">Telefon</label>
-                  <input class="form-control bg-dark border-light border-opacity-25 text-light" type="tel" id="tel"
-                    name="telefonnr" required>
-                </div>
-              </div>
-
-            </div>
-
-            <div class="address mb-2">
-              <div class="d-flex flex-row">
-                <div class="formBoxInput me-3 col-9">
-                  <label class="form-label" for="address">Adress</label>
-                  <input class="form-control bg-dark border-light border-opacity-25 text-light" type="text" id="address"
-                    name="adress" required>
-                </div>
-                <div class="formBoxInput col-3">
-                  <label class="form-label" for="postalCode">Postnr</label>
-                  <input class="form-control bg-dark border-light border-opacity-25 text-light" type="text"
-                    id="postalCode" name="postnr" required>
-                </div>
-              </div>
-
-            </div>
-            <div class="formBoxInput w-50 mb-5">
-              <label class="form-label" for="city">Stad</label>
-              <input class="form-control bg-dark border-light border-opacity-25 text-light" type="text" id="city"
-                name="stad" required>
-            </div>
-            
-            <a id="confirmButton" class ="mb-5 btn btn-dark border-light border-opacity-25 rounded-5 px-5 py-2 my-3" type="button" data-bs-toggle="collapse"
-              href="#confirmCollapse" aria-expanded="false" aria-controls="confirmCollapse">
-              Bekräfta dina val
-            </a>
-
-            <div id="confirmCollapse" class="collapse">
-
-                     <div class="columns card p-5 text-light card-body bg-dark my-3 rounded-5 d-flex col-12  border border-light
-              border-opacity-50 d-flex justify-content-center" id="summary"></div>
-
-              <button type="submit" class="btn btn-dark mt-3 rounded-5 py-2 px-5 border-light border-opacity-25" id="btn">Boka</button>
-    
-            </div>
-            
-            
-          </fieldset>
-        </div>
-      </div>
       </div>
     </form>
 
-    
-    
+
+
   </main>
 
   <footer class="border-top border-light bg-dark">
     <div class="container">
-      <div
-        class="d-flex flex-column flex-md-row py-5 justify-content-evenly align-items-start"
-      >
-        <img
-          class="col-12 col-md-4 my-3 px-md-4 mb-4 align-self-start"
-          src="img/logo_light.svg"
-          style="height: 25vh"
-          alt=""
-        />
+      <div class="d-flex flex-column flex-md-row py-5 justify-content-evenly align-items-start">
+        <img class="col-12 col-md-4 my-3 px-md-4 mb-4 align-self-start" src="img/logo_light.svg" style="height: 25vh"
+          alt="" />
         <div
-          class="container text-center text-md-start d-flex flex-column flex-md-row align-items-center align-items-md-start"
-        >
+          class="container text-center text-md-start d-flex flex-column flex-md-row align-items-center align-items-md-start">
           <div class="col-12 col-md-6 mx-3 col-lg-5">
             <h3>Kontakta oss</h3>
             <p>
-              <span style="font-weight: 500">Alla dagar</span
-              ><br />10:00-17:00<br />
+              <span style="font-weight: 500">Alla dagar</span><br />10:00-17:00<br />
               <span style="font-weight: 500">Telefon</span><br />072 99 83
               231<br />
-              <span style="font-weight: 500">E-post</span
-              ><br />snotopia@brantaberget.se
+              <span style="font-weight: 500">E-post</span><br />snotopia@brantaberget.se
             </p>
             <h3>Res hit</h3>
             <p>
@@ -471,8 +465,7 @@
             </p>
             <p>
               <span style="font-weight: 500">
-                Skiduthyrning och lokaler:</span
-              >
+                Skiduthyrning och lokaler:</span>
               <br />
               Sön–Tors: 08.00–22.00<br />
               Fre–lör: 08.00–01.00
