@@ -22,6 +22,7 @@ body {
 
 header {
     position: fixed;
+    border-bottom: solid 1px black;
 }
 
 h1, h2, h3, h4, h5, h6, .subheading {
@@ -29,7 +30,7 @@ h1, h2, h3, h4, h5, h6, .subheading {
 }
 
 h1 {
-    margin-top: 3rem;
+    margin-top: 2rem;
     font-family: "Jacquard 24", system-ui;
     font-weight: 400;
     font-size: 4rem;
@@ -65,20 +66,47 @@ h4 {
 
 .hero {
     height: 100vh;
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    background-size: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
-.hero>img {
-    width: 20rem;
-    border: solid 1px rgb(197, 197, 197);
-    border-radius: 1.5rem;
-    box-shadow: 0px 5px 5px grey;
+.card {
+    height: calc(88px * 4);
+    width: calc(62px * 4);
+    perspective: 50em;
+    transform-style: preserve-3d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.card>img {
+    transform: rotateY(45deg);
+	animation: rotateAnimation 2s linear infinite;
+}
+
+.card_front, .card_back {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.card_front {
+    z-index: 2;
+    backface-visibility: hidden;
+}
+
+.card_back {
+    z-index: 1;
+    transform: rotateY(180deg);
+}
+
+@keyframes rotateAnimation {
+	from {transform: rotateY(45deg);}
+	to {transform: rotateY(225deg);}
 }
 
 #hobby_breakdown {
