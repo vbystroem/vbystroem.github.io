@@ -1,6 +1,6 @@
 :root {
-    --bg: gainsboro;
-    --headings: grey;
+    --bg: white;
+    --headings: black;
     --card-bg: silver;
 }
 
@@ -8,7 +8,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    border: solid 1px hotpink;
+    /* border: solid 1px hotpink; */
 }
 
 body {
@@ -24,10 +24,26 @@ h1, h2, h3, h4, h5, h6, .subheading {
     color: var(--headings);
 }
 
+h1 {
+    margin-top: 3rem;
+    font-family: "Jacquard 24", system-ui;
+    font-weight: 400;
+    font-size: 4rem;
+    font-style: normal;
+}
+
+.subheading {
+    font-family: "Funnel Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+}
+
+
 .header_container {
     width: 100vw;
     padding: 2em;
-    background-color: var(--card-bg);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -35,11 +51,20 @@ h1, h2, h3, h4, h5, h6, .subheading {
 
 .hero {
     height: 100vh;
-    background-color: dimgrey;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+.hero>img {
+    width: 20rem;
+    border: solid 1px rgb(197, 197, 197);
+    border-radius: 1.5rem;
+    box-shadow: 0px 5px 5px grey;
 }
 
 #hobby_breakdown {
@@ -60,9 +85,30 @@ h1, h2, h3, h4, h5, h6, .subheading {
 
 .container>li {
     background-color: var(--card-bg);
-    width: calc(100% / 3);
-    margin: 1vw;
+    width: calc(100% / 3 - 1vw);
     padding: 2vw;
     border-radius: 1rem;
     list-style-type: none;
+}
+
+.container>li:nth-child(even) {
+    margin: 0 1vw;
+}
+
+@media only screen and (min-width: 992px) {
+    h1 {
+    margin-top: 3rem;
+    font-family: "Jacquard 24", system-ui;
+    font-weight: 400;
+    font-size: 10rem;
+    font-style: normal;
+    }
+
+    .subheading {
+    font-family: "Funnel Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+    }
 }
