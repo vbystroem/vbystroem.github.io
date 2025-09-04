@@ -17,12 +17,10 @@
 
 body {
     background-color: var(--bg);
-    
 }
 
 header {
-    position: fixed;
-    border-bottom: solid 1px black;
+    z-index: 1;
 }
 
 h1, h2, h3, h4, h5, h6, .subheading {
@@ -55,13 +53,29 @@ h4 {
     font-size: 1rem;
 }
 
-
 .header_container {
-    width: 100vw;
-    padding: 2em;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.4rem;
+}
+
+nav a {
+    color: #3c3c3c;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.2rem;
+    padding: 1.6rem 1.5rem;
+}
+
+nav a:hover {
+    background-color: white;
 }
 
 .hero {
@@ -75,7 +89,8 @@ h4 {
 .card {
     height: calc(88px * 4);
     width: calc(62px * 4);
-    perspective: 50em;
+    position: relative;
+    perspective: 100rem;
     transform-style: preserve-3d;
     display: flex;
     justify-content: center;
@@ -84,8 +99,8 @@ h4 {
 }
 
 .card>img {
-    transform: rotateY(45deg);
-	animation: rotateAnimation 2s linear infinite;
+    
+	animation: rotateAnimation 4s linear infinite;
 }
 
 .card_front, .card_back {
@@ -95,18 +110,18 @@ h4 {
 }
 
 .card_front {
-    z-index: 2;
+    z-index: 3;
     backface-visibility: hidden;
 }
 
 .card_back {
-    z-index: 1;
-    transform: rotateY(180deg);
+    z-index: 2;
 }
 
 @keyframes rotateAnimation {
-	from {transform: rotateY(45deg);}
-	to {transform: rotateY(225deg);}
+	from {transform: rotateY(0deg);}
+	to {transform: rotateY(180deg);}
+    to {transform: rotateY(360deg)}
 }
 
 #hobby_breakdown {
@@ -121,20 +136,66 @@ h4 {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
 }
 
-.container>li {
-    background-color: var(--card-bg);
+.container>.hobby:nth-child(even) {
+    flex-direction: row-reverse;
+}
+.textbox {
+    flex-shrink: 0;
+    width: 55ch;
+    margin: 0 5rem;
+}
+
+.hobby {
     width: calc(100% / 3 - 1vw);
-    padding: 2vw;
-    border-radius: 1rem;
+    margin: 3rem 0.2rem;
     list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.hobby>img {
+    border-radius: 1.3rem;
+    box-shadow: 0rem 0.2rem 0.8rem #3c3c3c;
 }
 
 .container>li:nth-child(even) {
     margin: 0 1vw;
+}
+
+@media only screen and (max-width: 480px) {
+    header {
+        margin: 0;
+        border-radius: 0;
+        width: 100vw;
+        position: fixed;
+        bottom:0;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #dfdfdf;
+    }
+}
+
+@media only screen and (min-width: 480px) {
+    header {
+        position: fixed;
+        bottom:0;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-bottom: 0.8rem;
+        background-color: #dfdfdf;
+        box-shadow: 0rem 0.2rem 0.5rem #3c3c3c;
+        border-radius: 1rem;
+    }
+
+    nav a {
+        padding: 1rem 2rem;
+    }
 }
 
 @media only screen and (min-width: 992px) {
@@ -152,5 +213,22 @@ h4 {
     font-weight: 400;
     font-style: normal;
     font-size: 1.5rem;
+    }
+
+    header {
+        position: fixed;
+        background-color: #fff;
+        left: 50%;
+        bottom: auto;
+        transform: translateX(-50%);
+        box-shadow: unset;
+        margin: 0;
+        border-radius: 0;
+        width: 100vw;
+    }
+
+    nav a:hover {
+        background-color: #dfdfdf;
+        border-radius: 0.5rem;
     }
 }
