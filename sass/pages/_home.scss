@@ -1,0 +1,129 @@
+.hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    &__spinning-card {
+        height: calc(8.8rem * 3);
+        width: calc(6.2rem * 3);
+        position: relative;
+        perspective: 100rem;
+        transform-style: preserve-3d;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-shrink: 0;
+
+        @include respond(tablet-p) {
+            height: calc(8.8rem * 3.25);
+            width: calc(6.2rem * 3.25);
+        }
+
+        @include respond(tablet-l) {
+            height: calc(8.8rem * 3.5);
+            width: calc(6.2rem * 3.5);
+        }
+
+        @include respond(desktop) {
+            height: calc(8.8rem * 3.75);
+            width: calc(6.2rem * 3.75);
+        }
+
+        @include respond(desktop-xl) {
+            height: calc(8.8rem * 4);
+            width: calc(6.2rem * 4);
+        } 
+    }
+
+    &__spinning-card-face-front, &__spinning-card-face-back {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+    }
+
+    &__spinning-card-face-front {
+        z-index: 3;
+        backface-visibility: hidden;
+    }
+
+    &__spinning-card-face-back {
+        z-index: 2;
+    }
+}
+
+.hobby-article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+
+    &__card {
+        height: calc(8.8rem * 3);
+        width: calc(6.2rem * 3);
+        border-radius: 1.3rem;
+        box-shadow: 0rem 0.2rem 0.8rem #3c3c3c;
+        
+        @include respond(tablet-p) {
+            height: calc(8.8rem * 3.25);
+            width: calc(6.2rem * 3.25);
+        }
+
+        @include respond(tablet-l) {
+            height: calc(8.8rem * 3.5);
+            width: calc(6.2rem * 3.5);
+        }
+
+        @include respond(desktop) {
+            height: calc(8.8rem * 3.75);
+            width: calc(6.2rem * 3.75);
+        }
+
+        @include respond(desktop-xl) {
+            height: calc(8.8rem * 4);
+            width: calc(6.2rem * 4);
+        } 
+    }
+
+    &__listitem {
+        display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+        @include respond(tablet-p) { 
+            margin: 3rem 0.2rem;
+            list-style-type: none;
+            flex-direction: row;
+            padding-left: 2rem;
+            
+            &:nth-child(even) {
+                flex-direction: row-reverse;
+                padding-left: 0;
+                padding-right: 2rem;
+            }
+        }
+    }
+ 
+    &__textbox {
+        /* top | right | bottom | left */
+        margin: 2rem 0 6rem 0;
+        padding: 0 2rem;
+        text-align: center;
+        
+
+        @include respond(tablet-p) { 
+            text-align: start;
+            min-width: 55ch;
+            max-width: 65ch;
+            margin: 0 5rem;
+            padding: 0;
+        }
+
+        @include respond(tablet-l) { 
+            width: 65ch;
+        }
+    } 
+}

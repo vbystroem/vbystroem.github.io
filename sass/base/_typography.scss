@@ -1,0 +1,72 @@
+.heading-primary, .heading-primary--sub, .heading-secondary, .heading-tertiary {
+    color: $color-black;
+}
+
+.heading-primary{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 6rem;
+
+    @include respond(tablet-l) {
+        margin-top: 3rem;
+        font-family: "Jacquard 24", system-ui;
+        font-weight: 400;
+        font-size: 10rem;
+        font-style: normal;
+    }
+
+    &--main {
+        font-family: "Jacquard 24", system-ui;
+        font-weight: 400;
+        font-size: 5.5rem;
+        font-style: normal;
+
+        @include respond(tablet-l) {
+            margin-top: 3rem;
+            font-family: "Jacquard 24", system-ui;
+            font-weight: 400;
+            font-size: 10rem;
+            font-style: normal;
+        }
+    }
+
+    &--sub {
+        font-size: 1.8rem;
+        font-family: "Funnel Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        
+    }
+}
+
+.heading-secondary {
+    font-family: "Jacquard 24", system-ui;
+    font-weight: 400;
+    font-size: 4rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+
+
+.heading-tertiary {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 0.8rem;
+
+    @include respond(tablet-p) {
+        text-align: left;
+    }
+}
+
+.header__link {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.hobby-article__paragraph {
+    font-size: 1.75rem;
+}

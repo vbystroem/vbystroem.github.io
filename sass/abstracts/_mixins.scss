@@ -1,0 +1,35 @@
+// This site is created mobile-first
+// 1em = 16px
+
+@mixin respond($breakpoint) {
+    @if $breakpoint == tablet-p {
+        @media screen and (min-width: 37.5em) { @content }; //600px
+    }
+    @if $breakpoint == tablet-l {
+        @media screen and (min-width: 56.25em) { @content }; //900px
+    }
+    @if $breakpoint == desktop {
+        @media screen and (min-width: 75em) { @content }; //1200px
+    }
+    @if $breakpoint == desktop-xl {
+        @media screen and (min-width: 112.5em) { @content }; //1800px
+    }
+}
+
+/* 
+@include respond(tablet-p) {
+
+}
+
+@include respond(tablet-l) {
+
+}
+
+@include respond(desktop) {
+
+}
+
+@include respond(desktop-xl) {
+
+} 
+*/
