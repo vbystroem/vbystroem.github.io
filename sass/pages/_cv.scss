@@ -1,0 +1,23 @@
+.cv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    list-style: initial;
+
+    &__experience-container {
+        width: 90vw;
+
+        &-accordion {
+            background-color: var(--grey-light);
+        }
+    }
+
+
+
+    &__experience {
+        padding: 2rem 4rem;
+    }
+}
+
+

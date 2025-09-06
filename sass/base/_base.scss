@@ -6,7 +6,7 @@
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    list-style: none;
+    line-height: 2.5ex;
 }
 
 html {
@@ -30,5 +30,5 @@ html {
 }
 
 body {
-    background-color: $color-white;
+    background-color: var(--white);
 }

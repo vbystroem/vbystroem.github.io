@@ -1,3 +1,9 @@
-$color-white: #fff;
-$color-middle: silver;
-$color-black: black;
+:root {
+    --white: #ffffff;
+    --grey-light: #dfdfdf;
+    --grey-midlight: #adadad;
+    --grey-mid: #808080;
+    --grey-middark: #505050;
+    --grey-dark: #3c3c3c;
+    --black: #000000;
+}

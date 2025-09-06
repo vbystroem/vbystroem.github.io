@@ -15,6 +15,16 @@
 
 } 
 */
+:root {
+  --white: #ffffff;
+  --grey-light: #dfdfdf;
+  --grey-midlight: #adadad;
+  --grey-mid: #808080;
+  --grey-middark: #505050;
+  --grey-dark: #3c3c3c;
+  --black: #000000;
+}
+
 .hero__spinning-card-face {
   animation: rotateAnimation 4s linear infinite;
 }
@@ -38,7 +48,7 @@
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  list-style: none;
+  line-height: 2.5ex;
 }
 
 html {
@@ -66,11 +76,20 @@ html {
 }
 
 body {
-  background-color: #fff;
+  background-color: var(--white);
+}
+
+body {
+  text-align: center;
+}
+@media screen and (min-width: 37.5em) {
+  body {
+    text-align: left;
+  }
 }
 
 .heading-primary, .heading-primary--sub, .heading-secondary, .heading-tertiary {
-  color: black;
+  color: var(--black);
 }
 
 .heading-primary {
@@ -112,7 +131,7 @@ body {
   font-style: normal;
 }
 
-.heading-secondary {
+.heading-secondary, .heading-secondary--inline {
   font-family: "Jacquard 24", system-ui;
   font-weight: 400;
   font-size: 4rem;
@@ -120,16 +139,26 @@ body {
   margin-bottom: 2rem;
 }
 
-.heading-tertiary {
-  text-align: center;
+.heading-secondary--inline {
+  display: inline;
+  vertical-align: middle;
+}
+
+.heading-tertiary, .heading-tertiary--cv {
   font-size: 2rem;
   font-weight: 600;
   margin-bottom: 0.8rem;
 }
-@media screen and (min-width: 37.5em) {
-  .heading-tertiary {
-    text-align: left;
-  }
+
+.heading-tertiary--cv {
+  margin-bottom: 0;
+}
+
+.heading-quarternary {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--grey-mid);
+  margin-bottom: 0.8rem;
 }
 
 .header__link {
@@ -137,20 +166,26 @@ body {
   font-weight: 600;
 }
 
-.hobby-article__paragraph {
+.paragraph {
   font-size: 1.75rem;
+  width: min(90vw, 50ch);
+  margin-bottom: 0.8rem;
 }
 
 .header {
   z-index: 1;
   margin: 0;
-  border-radius: 0;
-  width: 100vw;
+  width: 99vw;
   position: fixed;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  border-top: solid 1px;
+  border-left: solid 1px var(--grey-mid);
+  border-right: solid 1px var(--grey-mid);
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
-  background-color: #dfdfdf;
+  background-color: var(--grey-light);
   flex-shrink: 0;
 }
 .header__container {
@@ -161,12 +196,12 @@ body {
   flex-shrink: 0;
 }
 .header__link {
-  color: #3c3c3c;
+  color: var(--grey-dark);
   text-decoration: none;
   padding: 1.6rem 1.5rem;
 }
 .header__link:hover {
-  background-color: white;
+  background-color: var(--white);
 }
 
 @media screen and (min-width: 37.5em) {
@@ -176,8 +211,8 @@ body {
     left: 50%;
     transform: translateX(-50%);
     margin-bottom: 0.8rem;
-    background-color: #dfdfdf;
-    box-shadow: 0rem 0.2rem 0.5rem #3c3c3c;
+    background-color: var(--grey-light);
+    box-shadow: 0rem 0.2rem 0.5rem var(--grey-dark);
     border-radius: 1rem;
     flex-shrink: 0;
     width: unset;
@@ -188,19 +223,17 @@ body {
 }
 @media screen and (min-width: 56.25em) {
   .header {
-    position: fixed;
-    background-color: #fff;
-    left: 50%;
-    bottom: auto;
-    transform: translateX(-50%);
+    position: relative;
+    background-color: var(--white);
     box-shadow: unset;
     margin: 0;
+    border: unset;
     border-radius: 0;
     width: 100vw;
     flex-shrink: 0;
   }
   .header__link:hover {
-    background-color: #dfdfdf;
+    background-color: var(--grey-light);
     border-radius: 0.5rem;
   }
 }
@@ -269,7 +302,7 @@ body {
   height: 26.4rem;
   width: 18.6rem;
   border-radius: 1.3rem;
-  box-shadow: 0rem 0.2rem 0.8rem #3c3c3c;
+  box-shadow: 0rem 0.2rem 0.8rem var(--grey-dark);
 }
 @media screen and (min-width: 37.5em) {
   .hobby-article__card {
@@ -323,8 +356,7 @@ body {
 @media screen and (min-width: 37.5em) {
   .hobby-article__textbox {
     text-align: start;
-    min-width: 55ch;
-    max-width: 65ch;
+    width: min(93.75vw, 50ch);
     margin: 0 5rem;
     padding: 0;
   }
@@ -333,6 +365,23 @@ body {
   .hobby-article__textbox {
     width: 65ch;
   }
+}
+
+.cv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  list-style: initial;
+}
+.cv__experience-container {
+  width: 90vw;
+}
+.cv__experience-container-accordion {
+  background-color: var(--grey-light);
+}
+.cv__experience {
+  padding: 2rem 4rem;
 }
 
 /*# sourceMappingURL=style.css.map */

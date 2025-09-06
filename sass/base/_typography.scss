@@ -1,5 +1,15 @@
+body {
+
+    text-align: center;
+    
+    @include respond(tablet-p) {
+        text-align: left;
+    }
+
+}
+
 .heading-primary, .heading-primary--sub, .heading-secondary, .heading-tertiary {
-    color: $color-black;
+    color: var(--black);
 }
 
 .heading-primary{
@@ -42,7 +52,7 @@
     }
 }
 
-.heading-secondary {
+.heading-secondary, .heading-secondary--inline {
     font-family: "Jacquard 24", system-ui;
     font-weight: 400;
     font-size: 4rem;
@@ -50,16 +60,26 @@
     margin-bottom: 2rem;
 }
 
+.heading-secondary--inline {
+    display: inline;
+    vertical-align: middle;
+}
 
-.heading-tertiary {
-    text-align: center;
+.heading-tertiary, .heading-tertiary--cv {
     font-size: 2rem;
     font-weight: 600;
     margin-bottom: 0.8rem;
+}
 
-    @include respond(tablet-p) {
-        text-align: left;
-    }
+.heading-tertiary--cv {
+    margin-bottom: 0;
+}
+
+.heading-quarternary {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--grey-mid);
+    margin-bottom: 0.8rem;
 }
 
 .header__link {
@@ -67,6 +87,9 @@
     font-weight: 600;
 }
 
-.hobby-article__paragraph {
+.paragraph {
     font-size: 1.75rem;
+    width: min(90vw, 50ch);
+    margin-bottom: 0.8rem;
 }
+

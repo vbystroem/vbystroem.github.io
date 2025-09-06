@@ -64,7 +64,7 @@
         height: calc(8.8rem * 3);
         width: calc(6.2rem * 3);
         border-radius: 1.3rem;
-        box-shadow: 0rem 0.2rem 0.8rem #3c3c3c;
+        box-shadow: 0rem 0.2rem 0.8rem var(--grey-dark);
         
         @include respond(tablet-p) {
             height: calc(8.8rem * 3.25);
@@ -116,8 +116,7 @@
 
         @include respond(tablet-p) { 
             text-align: start;
-            min-width: 55ch;
-            max-width: 65ch;
+            width: min(93.75vw, 50ch);
             margin: 0 5rem;
             padding: 0;
         }

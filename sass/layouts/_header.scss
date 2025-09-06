@@ -1,15 +1,19 @@
 .header {
     z-index: 1;
     margin: 0;
-    border-radius: 0;
-    width: 100vw;
+    width: 99vw;
     position: fixed;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    border-top: solid 1px ;
+    border-left: solid 1px var(--grey-mid);
+    border-right: solid 1px var(--grey-mid);
     bottom:0;
     left: 50%;
     transform: translateX(-50%);
-    background-color: #dfdfdf;
+    background-color: var(--grey-light);
     flex-shrink: 0;
-    
+
     &__container {
         display: flex;
         justify-content: center;
@@ -19,12 +23,12 @@
     }
 
     &__link {
-        color: #3c3c3c;
+        color: var(--grey-dark);
         text-decoration: none;
         padding: 1.6rem 1.5rem;
         
         &:hover {
-            background-color: white;
+            background-color: var(--white);
         }
     }
 }
@@ -36,8 +40,8 @@
         left: 50%;
         transform: translateX(-50%);
         margin-bottom: 0.8rem;
-        background-color: #dfdfdf;
-        box-shadow: 0rem 0.2rem 0.5rem #3c3c3c;
+        background-color: var(--grey-light);
+        box-shadow: 0rem 0.2rem 0.5rem var(--grey-dark);
         border-radius: 1rem;
         flex-shrink: 0;
         width: unset;
@@ -50,19 +54,17 @@
 
 @include respond(tablet-l) {
     .header {
-        position: fixed;
-        background-color: #fff;
-        left: 50%;
-        bottom: auto;
-        transform: translateX(-50%);
+        position: relative;
+        background-color: var(--white);
         box-shadow: unset;
         margin: 0;
+        border: unset;
         border-radius: 0;
         width: 100vw;
         flex-shrink: 0;
 
         &__link:hover {
-            background-color: #dfdfdf;
+            background-color: var(--grey-light);
             border-radius: 0.5rem;
         }
     }
