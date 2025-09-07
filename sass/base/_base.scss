@@ -1,3 +1,7 @@
+:root {
+    interpolate-size: allow-keywords;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -6,7 +10,7 @@
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    line-height: 2.5ex;
+    list-style: none;
 }
 
 html {

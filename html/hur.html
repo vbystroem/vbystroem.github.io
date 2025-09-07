@@ -1,147 +1,291 @@
 <!DOCTYPE html>
 <html lang="sv">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1"
+    />
     <title>Veronica Byström</title>
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Jacquard+24&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jacquard+24&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <header class="header">
-        <nav class="header__container">
-            <a class="header__link" href="/index.html">Vem?</a>
-            <a class="header__link" href="/html/hur.html">Hur?</a>
-            <a class="header__link" href="/html/varfor.html">Varför?</a>
-            <a class="header__link" href="/html/kontakt.html">Kontakt.</a>
-        </nav>
+      <nav class="header__container">
+        <a class="header__link" href="/index.html">Vem?</a>
+        <a class="header__link" href="/html/hur.html">Hur?</a>
+        <a class="header__link" href="/html/varfor.html">Varför?</a>
+        <a class="header__link" href="/html/kontakt.html">Kontakt.</a>
+      </nav>
     </header>
 
     <main class="cv">
-        <h1 class="heading-primary--main">Curriculum Vitae</h1>
-        <section class="cv__experience-container--tucked">
-            <details class="cv_experience-container-accordion">
-                <summary class="cv_experience-container-accordion-summary">
-                    <h2 class="heading-secondary--cv">Arbetslivserfarenhet</h2>
-                </summary>
-                <ul class="cv__experience">
-                    <li class="cv__experience-item listitem">
-                        <h3 class="heading-tertiary--cv">Jobbtitel ex "Gruvgrävare"</h3>
-                        <h4 class="heading-quarternary">Arbetsplats ex "Johanssons AB"</h4>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus, molestias ducimus quaerat possimus necessitatibus eos quam vitae aliquid earum animi alias distinctio quo consequatur recusandae error modi! Obcaecati, ipsa iure?</p>
-                    </li>
-                    <li class="cv__experience-item listitem">
-                        <h3 class="heading-tertiary--cv">Jobbtitel ex "Gruvgrävare"</h3>
-                        <h4 class="heading-quarternary">Arbetsplats ex "Johanssons AB"</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt temporibus ut velit expedita eligendi numquam dolorum, voluptas pariatur. Corrupti vitae, voluptatum dolorem obcaecati maiores eos nostrum provident. Sapiente, ipsum similique.</p>
-                    </li>
-                    <li class="cv__experience-item listitem">
-                        <h3 class="heading-tertiary--cv">Jobbtitel ex "Gruvgrävare"</h3>
-                        <h4 class="heading-quarternary">Arbetsplats ex "Johanssons AB"</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, vitae numquam pariatur ad asperiores dolor saepe? Magni perferendis ullam tempore, quia pariatur praesentium debitis ab. Obcaecati necessitatibus sit non est.</p>
-                    </li>
-                </ul>
-            </details>
+      <h1 class="heading-primary--main">Curriculum Vitae</h1>
+      <section class="cv__experience-container--tucked">
+        <details class="cv_experience-container-accordion">
+          <summary class="cv__experience-container-accordion-summary">
+            <div class="accordion__inline-container">
+              <h2 class="heading-secondary--cv">Arbetslivserfarenhet</h2>
+              <img
+                class="pointer"
+                src="/img/borrowed-pointer.svg"
+                alt="arrow that signifies whether or not the accordion is open"
+              />
+            </div>
+          </summary>
+          <hr class="cv__accordion-divider" />
+          <ul class="cv__experience">
+            <li class="cv__experience-item listitem">
+              <h3 class="heading-tertiary--cv">Jobbtitel ex "Gruvgrävare"</h3>
+              <h4 class="heading-quarternary">
+                Arbetsplats ex "Johanssons AB"
+              </h4>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Accusamus, molestias ducimus quaerat possimus necessitatibus eos
+                quam vitae aliquid earum animi alias distinctio quo consequatur
+                recusandae error modi! Obcaecati, ipsa iure?
+              </p>
+            </li>
+            <li class="cv__experience-item listitem">
+              <h3 class="heading-tertiary--cv">Jobbtitel ex "Gruvgrävare"</h3>
+              <h4 class="heading-quarternary">
+                Arbetsplats ex "Johanssons AB"
+              </h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+                temporibus ut velit expedita eligendi numquam dolorum, voluptas
+                pariatur. Corrupti vitae, voluptatum dolorem obcaecati maiores
+                eos nostrum provident. Sapiente, ipsum similique.
+              </p>
+            </li>
+            <li class="cv__experience-item listitem">
+              <h3 class="heading-tertiary--cv">Jobbtitel ex "Gruvgrävare"</h3>
+              <h4 class="heading-quarternary">
+                Arbetsplats ex "Johanssons AB"
+              </h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
+                vitae numquam pariatur ad asperiores dolor saepe? Magni
+                perferendis ullam tempore, quia pariatur praesentium debitis ab.
+                Obcaecati necessitatibus sit non est.
+              </p>
+            </li>
+          </ul>
+        </details>
 
-            <details class="cv_experience-container-accordion">
-                <summary class="cv_experience-container-accordion-summary">
-                    <h2 class="heading-secondary--cv">Utbildning</h2>
-                </summary>
-                    <ul class="cv__experience">
-                        <li class="cv__experience-item listitem">
-                            <h3 class="heading-tertiary--cv">Programnamn ex "Gruvgrävarprogrammet på Högskolan i Jokkmokk"</h3>
-                            <h4 class="heading-quarternary">Examen ex "Kandidat inom Stenlära"</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet, sequi corporis dolorum, nesciunt ullam sit accusamus quis necessitatibus officiis laboriosam qui eius iste exercitationem aut obcaecati fuga voluptate? Inventore, a!</p>
-                        </li>
-                        <li class="cv__experience-item listitem">
-                            <h3 class="heading-tertiary--cv">Programnamn ex "Gruvgrävarprogrammet på Högskolan i Jokkmokk"</h3>
-                            <h4 class="heading-quarternary">Examen ex "Kandidat inom Stenlära"</h4>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur eos, similique suscipit culpa quae reprehenderit voluptatibus quasi dolores nam sequi doloremque eligendi enim consequuntur porro rerum, earum aliquam corporis ipsum?</p>
-                        </li>
-                        <li class="cv__experience-item listitem">
-                            <h3 class="heading-tertiary--cv">Programnamn ex "Gruvgrävarprogrammet på Högskolan i Jokkmokk"</h3>
-                            <h4 class="heading-quarternary">Examen ex "Kandidat inom Stenlära"</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita consequuntur asperiores unde atque id libero? Magnam, tenetur aperiam! Similique laborum sit repellat perspiciatis maiores a vitae voluptate aliquam. Quod, debitis!</p>
-                        </li>
-                    </ul>
-            </details>
+        <details class="cv_experience-container-accordion">
+          <summary class="cv__experience-container-accordion-summary">
+            <div class="accordion__inline-container">
+              <h2 class="heading-secondary--cv">Utbildning</h2>
+              <img
+                class="pointer"
+                src="/img/borrowed-pointer.svg"
+                alt="arrow that signifies whether or not the accordion is open"
+              />
+            </div>
+          </summary>
+          <hr class="cv__accordion-divider" />
+          <ul class="cv__experience">
+            <li class="cv__experience-item listitem">
+              <h3 class="heading-tertiary--cv">
+                Programnamn ex "Gruvgrävarprogrammet på Högskolan i Jokkmokk"
+              </h3>
+              <h4 class="heading-quarternary">
+                Examen ex "Kandidat inom Stenlära"
+              </h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Eveniet, sequi corporis dolorum, nesciunt ullam sit accusamus
+                quis necessitatibus officiis laboriosam qui eius iste
+                exercitationem aut obcaecati fuga voluptate? Inventore, a!
+              </p>
+            </li>
+            <li class="cv__experience-item listitem">
+              <h3 class="heading-tertiary--cv">
+                Programnamn ex "Gruvgrävarprogrammet på Högskolan i Jokkmokk"
+              </h3>
+              <h4 class="heading-quarternary">
+                Examen ex "Kandidat inom Stenlära"
+              </h4>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Consectetur eos, similique suscipit culpa quae reprehenderit
+                voluptatibus quasi dolores nam sequi doloremque eligendi enim
+                consequuntur porro rerum, earum aliquam corporis ipsum?
+              </p>
+            </li>
+            <li class="cv__experience-item listitem">
+              <h3 class="heading-tertiary--cv">
+                Programnamn ex "Gruvgrävarprogrammet på Högskolan i Jokkmokk"
+              </h3>
+              <h4 class="heading-quarternary">
+                Examen ex "Kandidat inom Stenlära"
+              </h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Expedita consequuntur asperiores unde atque id libero? Magnam,
+                tenetur aperiam! Similique laborum sit repellat perspiciatis
+                maiores a vitae voluptate aliquam. Quod, debitis!
+              </p>
+            </li>
+          </ul>
+        </details>
 
-            <details class="cv_experience-container-accordion">
-                <summary class="cv_experience-container-accordion-summary">
-                    <h2 class="heading-secondary--cv">Färdigheter</h2>
-                </summary>
-                <hr>
-                <ul class="cv__experience">
-                    <li class="listitem">Tillgänglig HTML</li>
-                    <li class="listitem">CSS/SASS</li>
-                    <li class="listitem">Javascript</li>
-                    <li class="listitem">React</li>
-                    <li class="listitem">Figma</li>
-                    <li class="listitem">Tailwind</li>
-                    <li class="listitem">Hela Adobe Suiten (++Illustrator & InDesign)</li>
-                    <li class="listitem">Användartestning</li>
-                    <li class="listitem">WCAG 3.0</li>
-                    <li class="listitem">Microsoft 365</li>
-                </ul>
-            </details>  
-        </section>
+        <details class="cv__experience-container-accordion">
+          <summary class="cv__experience-container-accordion-summary">
+            <div class="accordion__inline-container">
+              <h2 class="heading-secondary--cv">Färdigheter</h2>
+              <img
+                class="pointer"
+                src="/img/borrowed-pointer.svg"
+                alt="arrow that signifies whether or not the accordion is open"
+              />
+            </div>
+          </summary>
+          <hr class="cv__accordion-divider" />
+          <ul class="cv__experience">
+            <li class="listitem">Tillgänglig HTML</li>
+            <li class="listitem">CSS/SASS</li>
+            <li class="listitem">Javascript</li>
+            <li class="listitem">React</li>
+            <li class="listitem">Figma</li>
+            <li class="listitem">Tailwind</li>
+            <li class="listitem">
+              Hela Adobe Suiten (++Illustrator & InDesign)
+            </li>
+            <li class="listitem">Användartestning</li>
+            <li class="listitem">WCAG 3.0</li>
+            <li class="listitem">Microsoft 365</li>
+          </ul>
+        </details>
+      </section>
 
-        <section class="cv__experience-container--open">
-            <ul class="cv__experience">
-                <h2>Arbetslivserfarenhet</h2>
-                <li class="cv__experience-item">
-                    <h3 class="heading-tertiary"></h3>
-                    <h4 class="heading-quarternary"></h4>
-                    <p></p>
-                </li>
-                <li class="cv__experience-item">
-                    <h3 class="heading-tertiary"></h3>
-                    <h4 class="heading-quarternary"></h4>
-                    <p></p>
-                </li>
-                <li class="cv__experience-item">
-                    <h3 class="heading-tertiary"></h3>
-                    <h4 class="heading-quarternary"></h4>
-                    <p></p>
-                </li>
-            </ul>
+      <section class="cv__experience-container--open">
+        <div class="cv__experience-container-subsection">
+          <h2 class="heading-secondary--cv">Arbetslivserfarenhet</h2>
+          <ul class="cv__experience">
+            <li class="cv__experience-item listitem">
+              <h3 class="heading-tertiary--cv">
+                Programnamn ex "Gruvgrävarprogrammet på Högskolan i Jokkmokk"
+              </h3>
+              <h4 class="heading-quarternary">
+                Examen ex "Kandidat inom Stenlära"
+              </h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Eveniet, sequi corporis dolorum, nesciunt ullam sit accusamus
+                quis necessitatibus officiis laboriosam qui eius iste
+                exercitationem aut obcaecati fuga voluptate? Inventore, a!
+              </p>
+            </li>
+            <li class="cv__experience-item listitem">
+              <h3 class="heading-tertiary--cv">
+                Programnamn ex "Gruvgrävarprogrammet på Högskolan i Jokkmokk"
+              </h3>
+              <h4 class="heading-quarternary">
+                Examen ex "Kandidat inom Stenlära"
+              </h4>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Consectetur eos, similique suscipit culpa quae reprehenderit
+                voluptatibus quasi dolores nam sequi doloremque eligendi enim
+                consequuntur porro rerum, earum aliquam corporis ipsum?
+              </p>
+            </li>
+            <li class="cv__experience-item listitem">
+              <h3 class="heading-tertiary--cv">
+                Programnamn ex "Gruvgrävarprogrammet på Högskolan i Jokkmokk"
+              </h3>
+              <h4 class="heading-quarternary">
+                Examen ex "Kandidat inom Stenlära"
+              </h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Expedita consequuntur asperiores unde atque id libero? Magnam,
+                tenetur aperiam! Similique laborum sit repellat perspiciatis
+                maiores a vitae voluptate aliquam. Quod, debitis!
+              </p>
+            </li>
+          </ul>
+        </div>
 
-            <ul class="cv__experience">
-                <h2>Utbildning</h2>
-                <li class="cv__experience-item">
-                    <h3 class="heading-tertiary"></h3>
-                    <h4 class="heading-quarternary"></h4>
-                    <p></p>
-                </li>
-                <li class="cv__experience-item">
-                    <h3 class="heading-tertiary"></h3>
-                    <h4 class="heading-quarternary"></h4>
-                    <p></p>
-                </li>
-                <li class="cv__experience-item">
-                    <h3 class="heading-tertiary"></h3>
-                    <h4 class="heading-quarternary"></h4>
-                    <p></p>
-                </li>
-            </ul>
-                    
-            <ul class="cv__skills">
-                <h2>Färdigheter</h2>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-        </section>
+        <div class="cv__experience-container-subsection">
+          <h2 class="heading-secondary--cv">Utbildning</h2>
+          <ul class="cv__experience">
+            <li class="cv__experience-item listitem">
+              <h3 class="heading-tertiary--cv">
+                Programnamn ex "Gruvgrävarprogrammet på Högskolan i Jokkmokk"
+              </h3>
+              <h4 class="heading-quarternary">
+                Examen ex "Kandidat inom Stenlära"
+              </h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Eveniet, sequi corporis dolorum, nesciunt ullam sit accusamus
+                quis necessitatibus officiis laboriosam qui eius iste
+                exercitationem aut obcaecati fuga voluptate? Inventore, a!
+              </p>
+            </li>
+            <li class="cv__experience-item listitem">
+              <h3 class="heading-tertiary--cv">
+                Programnamn ex "Gruvgrävarprogrammet på Högskolan i Jokkmokk"
+              </h3>
+              <h4 class="heading-quarternary">
+                Examen ex "Kandidat inom Stenlära"
+              </h4>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Consectetur eos, similique suscipit culpa quae reprehenderit
+                voluptatibus quasi dolores nam sequi doloremque eligendi enim
+                consequuntur porro rerum, earum aliquam corporis ipsum?
+              </p>
+            </li>
+            <li class="cv__experience-item listitem">
+              <h3 class="heading-tertiary--cv">
+                Programnamn ex "Gruvgrävarprogrammet på Högskolan i Jokkmokk"
+              </h3>
+              <h4 class="heading-quarternary">
+                Examen ex "Kandidat inom Stenlära"
+              </h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Expedita consequuntur asperiores unde atque id libero? Magnam,
+                tenetur aperiam! Similique laborum sit repellat perspiciatis
+                maiores a vitae voluptate aliquam. Quod, debitis!
+              </p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="cv__experience-container-subsection">
+          <h2 class="heading-secondary--cv">Färdigheter</h2>
+          <ul class="cv__skills">
+            <li class="listitem">Tillgänglig HTML</li>
+            <li class="listitem">CSS/SASS</li>
+            <li class="listitem">Javascript</li>
+            <li class="listitem">React</li>
+            <li class="listitem">Figma</li>
+            <li class="listitem">Tailwind</li>
+            <li class="listitem">
+              Hela Adobe Suiten (++Illustrator & InDesign)
+            </li>
+            <li class="listitem">Användartestning</li>
+            <li class="listitem">WCAG 3.0</li>
+            <li class="listitem">Microsoft 365</li>
+          </ul>
+        </div>
+      </section>
     </main>
-</body>
+  </body>
 </html>
