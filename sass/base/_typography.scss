@@ -1,10 +1,6 @@
 body {
 
-    text-align: center;
-    
-    @include respond(tablet-p) {
-        text-align: left;
-    }
+    text-align: left;
 
 }
 
@@ -52,7 +48,7 @@ body {
     }
 }
 
-.heading-secondary, .heading-secondary--inline {
+.heading-secondary, .heading-secondary--cv {
     font-family: "Jacquard 24", system-ui;
     font-weight: 400;
     font-size: 4rem;
@@ -60,7 +56,13 @@ body {
     margin-bottom: 2rem;
 }
 
-.heading-secondary--inline {
+.heading-secondary--cv {
+    font-size: 1.8rem;
+    font-family: "Funnel Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    color: var(--grey-dark);
     display: inline;
     vertical-align: middle;
 }
@@ -87,9 +89,15 @@ body {
     font-weight: 600;
 }
 
-.paragraph {
+.paragraph, .listitem {
     font-size: 1.75rem;
     width: min(90vw, 50ch);
     margin-bottom: 0.8rem;
+}
+
+.listitem {
+    list-style: none;
+    width: min(95%, 50ch);
+    padding-right: 1rem;
 }
 

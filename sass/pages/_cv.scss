@@ -3,21 +3,50 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    list-style: initial;
-
-    &__experience-container {
-        width: 90vw;
-
-        &-accordion {
-            background-color: var(--grey-light);
-        }
-    }
-
-
 
     &__experience {
-        padding: 2rem 4rem;
+        width: 90vw;
     }
+
+    &__experience-container--tucked, &__experience-container--open {
+        width: 90vw;
+    }
+
+    &__experience-container--open {
+        display: none;
+    }
+
+    &__experience-container-accordion-summary {
+        list-style: initial;
+        list-style-position: inside;
+    }
+
+    @include respond(tablet-p) {
+        .cv__experience-container--open {
+            display: inherit;
+        }
+
+        .cv__experience-container--tucked {
+            display: none;
+        }
+    }
+}
+
+details {
+    background-color: var(--grey-light);
+    margin-bottom: .5rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: solid 1px var(--grey-midlight-2);
+}
+
+details[open] summary {
+    /* top | right | bottom | left */
+    margin-bottom: 2rem;
+    margin-right:  -1em;
+    margin-left: -1em;
+    padding-bottom: 1rem;
+    border-bottom: solid 1px var(--grey-midlight-2);
 }
 
 
