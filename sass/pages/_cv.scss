@@ -27,6 +27,7 @@
         .cv__experience-container--open {
             display: grid;
             grid-template-columns: 1fr 2fr;
+            gap: 0.2rem;
         }
 
         .cv__experience-container--tucked {
@@ -34,7 +35,7 @@
         }
 
         .cv__experience-container-subsection {
-            min-width: 33vw;
+            min-width: 20rem;
         }
     }
 }

@@ -175,14 +175,28 @@ body {
 
 .paragraph, .listitem {
   font-size: 1.75rem;
-  width: min(90vw, 50ch);
   margin-bottom: 0.8rem;
 }
 
-.listitem {
+.listitem-p {
   list-style: none;
-  width: min(95%, 50ch);
   padding-right: 1rem;
+}
+
+.cv__bodytext, .heading-tertiary--cv, .heading-quarternary {
+  font-size: 65%;
+}
+
+.cv__griditem-1 {
+  width: 17.5vw;
+}
+
+.cv__griditem-2 {
+  width: 39vw;
+}
+
+.cv__griditem-3 {
+  grid-column: 1/2;
 }
 
 .header {
@@ -404,12 +418,13 @@ body {
   .cv .cv__experience-container--open {
     display: grid;
     grid-template-columns: 1fr 2fr;
+    gap: 0.2rem;
   }
   .cv .cv__experience-container--tucked {
     display: none;
   }
   .cv .cv__experience-container-subsection {
-    min-width: 33vw;
+    min-width: 20rem;
   }
 }
 
