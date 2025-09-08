@@ -48,12 +48,11 @@ body {
     }
 }
 
-.heading-secondary, .heading-secondary--cv {
+.heading-secondary {
     font-family: "Jacquard 24", system-ui;
     font-weight: 400;
     font-size: 4rem;
     font-weight: 400;
-    margin-bottom: calc(var(--margin) * 4);
 }
 
 .heading-secondary--cv {
@@ -81,7 +80,7 @@ body {
 .heading-quarternary {
     font-size: 1.5rem;
     font-weight: 400;
-    color: var(--grey-mid);
+    color: var(--grey-dark);
     margin-bottom: calc(var(--margin) * 1.25);
 }
 
@@ -102,6 +101,16 @@ body {
 
 .cv__bodytext, .heading-tertiary--cv, .heading-quarternary {
     font-size: 65%;
+}
+
+.cv__bodytext {
+    margin-bottom: calc(var(--margin) * 2);
+    font-style: italic;
+    color: var(--grey-mid);
+}
+
+.cv__list-item {
+    font-size: 1.75rem;
 }
 
 
