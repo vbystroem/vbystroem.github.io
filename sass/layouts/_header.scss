@@ -5,9 +5,7 @@
     position: fixed;
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
-    border-top: solid 1px var(--grey-midlight-2);
-    border-left: solid 1px var(--grey-midlight-2);
-    border-right: solid 1px var(--grey-midlight-2);
+    border: solid 1px var(--grey-midlight-2);
     bottom:0;
     left: 50%;
     transform: translateX(-50%);
@@ -41,7 +39,7 @@
         transform: translateX(-50%);
         margin-bottom: 0.8rem;
         background-color: var(--grey-light);
-        box-shadow: 0rem 0.2rem 0.5rem var(--grey-dark);
+        /* box-shadow: 0rem 0.2rem 0.5rem var(--grey-dark); */
         border-radius: 1rem;
         flex-shrink: 0;
         width: unset;

@@ -13,10 +13,10 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 6rem;
+    margin-top: calc(var(--margin) * 12);
 
     @include respond(tablet-l) {
-        margin-top: 3rem;
+        margin-top: calc(var(--margin) * 6);
         font-family: "Jacquard 24", system-ui;
         font-weight: 400;
         font-size: 10rem;
@@ -30,7 +30,7 @@ body {
         font-style: normal;
 
         @include respond(tablet-l) {
-            margin-top: 3rem;
+            margin-top: calc(var(--margin) * 6);
             font-family: "Jacquard 24", system-ui;
             font-weight: 400;
             font-size: 10rem;
@@ -53,7 +53,7 @@ body {
     font-weight: 400;
     font-size: 4rem;
     font-weight: 400;
-    margin-bottom: 2rem;
+    margin-bottom: calc(var(--margin) * 4);
 }
 
 .heading-secondary--cv {
@@ -70,7 +70,7 @@ body {
 .heading-tertiary, .heading-tertiary--cv {
     font-size: 2rem;
     font-weight: 600;
-    margin-bottom: 0.8rem;
+    margin-bottom: calc(var(--margin) * 1.25);
 }
 
 .heading-tertiary--cv {
@@ -82,7 +82,7 @@ body {
     font-size: 1.5rem;
     font-weight: 400;
     color: var(--grey-mid);
-    margin-bottom: 0.8rem;
+    margin-bottom: calc(var(--margin) * 1.25);
 }
 
 .header__link {
@@ -92,7 +92,7 @@ body {
 
 .paragraph, .listitem {
     font-size: 1.75rem;
-    margin-bottom: 0.8rem;
+    margin-bottom: calc(var(--margin) * 1.25);
 }
 
 .listitem-p {
@@ -102,18 +102,6 @@ body {
 
 .cv__bodytext, .heading-tertiary--cv, .heading-quarternary {
     font-size: 65%;
-}
-
-.cv__griditem-1 {
-    width: 17.5vw;
-}
-
-.cv__griditem-2 {
-    width: 39vw;
-}
-
-.cv__griditem-3 {
-    grid-column: 1 / 2; 
 }
 
 

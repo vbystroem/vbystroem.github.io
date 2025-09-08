@@ -1,0 +1,50 @@
+.accordion {
+    background-color: var(--grey-light);
+    margin-bottom: .5rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: solid 1px var(--grey-midlight-2);
+    height: 100%;
+}
+
+.accordion:hover {
+    cursor: pointer;
+}
+
+.accordion__summary::marker{
+    color: var(--grey-mid);
+    font-size: 1.5rem;
+}
+
+.accordion__inliner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+
+    >.heading-secondary--cv {
+        margin-bottom: 0;
+    }
+}
+
+.accordion__pointer {
+    width: 1.5rem;
+}
+
+.accordion:open .accordion__pointer {
+    transform: rotate(180deg);
+    transition: transform 0.2s;
+}
+
+.accordion:not(:open) .accordion__pointer {
+    transform: rotate(90deg);
+    transition: transform 0.2s;
+}
+
+.accordion__divider {
+    margin: 1rem -1rem;
+    border-top: solid 1px var(--grey-midlight-2);
+    border-bottom: 0;
+    border-left: 0;
+    border-right: 0;
+}
