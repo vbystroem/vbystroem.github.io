@@ -177,4 +177,62 @@
 
 .projects {
     margin-top: calc(var(--margin) * 6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 90vw;
+}
+
+.projects__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-shrink: auto;
+    flex-wrap: wrap;
+    max-width: 90vw;
+    
+}
+
+.projects__unit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: calc(var(--margin) * 2);
+}
+
+.card {
+    height: calc(8.8rem * 3);
+    width: calc(6.2rem * 3);
+    margin-bottom: var(--margin);
+    margin-inline: calc(var(--margin) * 3);
+    border-radius: 1.3rem;
+    box-shadow: 0rem 0.2rem 0.4rem var(--grey-dark);
+    
+    @include respond(tablet-p) {
+        height: calc(8.8rem * 3.25);
+        width: calc(6.2rem * 3.25);
+    }
+
+    @include respond(tablet-l) {
+        height: calc(8.8rem * 3.5);
+        width: calc(6.2rem * 3.5);
+    }
+
+    @include respond(desktop) {
+        height: calc(8.8rem * 3.75);
+        width: calc(6.2rem * 3.75);
+    }
+
+    @include respond(desktop-xl) {
+        height: calc(8.8rem * 4);
+        width: calc(6.2rem * 4);
+    } 
+}
+
+.projects__card {
+    scale: 85%;
+    margin: 0;
 }

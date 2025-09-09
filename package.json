@@ -18,5 +18,8 @@
   "homepage": "https://github.com/vbystroem/ChasHackathonSep25_vbystroem#readme",
   "devDependencies": {
     "sass": "^1.92.0"
+  },
+  "dependencies": {
+    "http-server": "^14.1.1"
   }
 }

@@ -1,0 +1,25 @@
+.btn {
+    font-size: 1.75rem;
+    margin-block: 1.5rem;
+    padding: 1.25rem 2.5rem;
+    color: var(--black);
+    background-color: var(--grey-light);
+    border: solid 1px var(--grey-midlight);
+    border-radius: 0.5rem;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: auto;
+
+    &__img {
+        height: 2.5rem;
+        margin-bottom: 0.5rem;
+        margin-right: 0.5rem;
+    }
+}
+
+.btn:hover {
+    background-color: white;
+}

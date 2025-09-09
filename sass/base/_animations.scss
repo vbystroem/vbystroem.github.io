@@ -7,3 +7,52 @@
 	to {transform: rotateY(180deg);}
     to {transform: rotateY(360deg)}
 }
+
+.projects__unit  {
+	perspective: 200px; 
+}
+
+.card {
+	transition: transform 0.3s ease;
+	transform-style: preserve-3d;
+}
+
+.card:hover {
+	transform: translateZ(1rem);
+	cursor: pointer;
+}
+
+@keyframes hoverExpand {
+	from {
+		transform: translateZ(0);
+	}
+	to {
+		transform: translateZ(1rem);
+	}
+}
+
+.popup:target > .popup__content {
+	animation: raise 0.3s ease;
+}
+
+.popup:target {
+	animation: fade 0.3s ease;
+}
+
+@keyframes raise {
+	from {
+		height: 0;
+	}
+	to {
+		height: 85vh;
+	}
+}
+
+@keyframes fade {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}

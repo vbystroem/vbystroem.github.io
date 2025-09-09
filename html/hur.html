@@ -25,7 +25,6 @@
         <a class="header__link" href="/index.html">Vem?</a>
         <a class="header__link" href="/html/hur.html">Hur?</a>
         <a class="header__link" href="/html/varfor.html">Varför?</a>
-        <a class="header__link" href="/html/kontakt.html">Kontakt.</a>
       </nav>
     </header>
 
@@ -302,8 +301,52 @@
         </div>
       </section>
       <section class="projects">
-        <h2 class="heading-secondary">Mina Projekt</h2>
+        <h2 class="heading-secondary--projects">Mina Projekt</h2>
+        <div class="projects__container" id="projects__container">
+          <div class="projects__unit">
+            <a class="projects__unit" href="#popup">
+              <img class="card projects__card" id="projects__card-1" src="/img/veronicard-sample-project.png" alt="">
+            </a>
+            
+              <h3 class="heading-tertiary">Exempelprojekt</h3>
+            
+          </div>
+          <div class="projects__unit">
+            <a class="projects__unit" href="#popup">
+              <img class="card projects__card" id="projects__card-2" src="/img/veronicard-sample-project.png" alt="">
+            </a>
+            
+              <h3 class="heading-tertiary">Exempelprojekt</h3>
+            
+          </div>
+          <div class="projects__unit">
+            <a class="projects__unit" href="#popup">
+              <img class="card projects__card" id="projects__card-3" src="/img/veronicard-sample-project.png" alt="">
+            </a>
+            <h3 class="heading-tertiary">Exempelprojekt</h3>
+          </div>
+        </div>
       </section>
     </main>
+
+    <!-- pop-up below here -->
+
+    <div class="popup" id="popup">
+      <div class="popup__content">
+        <div class="popup__title">
+          <h3 class="heading-tertiary--popup">Exempelprojekt</h3>
+          <a href="#popup__container"><img class="popup__close" src="/img/closebutton.svg" alt=""></a>
+        </div>
+        <img class="popup__img" src="/img/manet.jpg" alt="">
+        <div class="popup__textbox">
+          <p class="paragraph paragraph--popup">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque harum enim mollitia, corrupti eius ipsa fuga ullam eum minus. Nostrum explicabo obcaecati quam assumenda harum architecto dolore rerum eos debitis.</p>
+          <a class="btn" href="https://github.com/vbystroem" target="_blank">
+            <img class="btn__img" src="/img/github-mark.svg" alt="github logo">
+            Repo
+          </a>
+        </div>
+      </div>
+    </div>
+     
   </body>
 </html>

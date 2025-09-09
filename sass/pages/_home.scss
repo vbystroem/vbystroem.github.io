@@ -60,7 +60,7 @@
     flex-direction: column;
 
 
-    &__card {
+    &__card, .card {
         height: calc(8.8rem * 3);
         width: calc(6.2rem * 3);
         border-radius: 1.3rem;
@@ -105,9 +105,10 @@
                 padding-right: 2rem;
             }
         }
-    }
- 
-    &__textbox {
+    } 
+}
+
+.hobby-article__textbox, .textbox--short {
         /* top | right | bottom | left */
         margin: calc(var(--margin) * 4) 0 calc(var(--margin) * 12) 0;
         padding: 0 2rem;
@@ -116,12 +117,17 @@
         @include respond(tablet-p) { 
             text-align: start;
             width: min(93.75vw, 50ch);
-            margin: 0 calc(var(--margin) * 10);
             padding: 0;
+            margin: 0 calc(var(--margin) * 10);
         }
 
         @include respond(tablet-l) { 
             width: 65ch;
         }
-    } 
+    }
+
+.textbox, .textbox--short {
+    text-align: center;
+    margin: calc(var(--margin) * 4) 0 calc(var(--margin) * 12) 0;
 }
+

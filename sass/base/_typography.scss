@@ -48,12 +48,18 @@ body {
     }
 }
 
-.heading-secondary {
-    font-family: "Jacquard 24", system-ui;
-    font-weight: 400;
-    font-size: 4rem;
-    font-weight: 400;
+.heading-secondary, .heading-secondary--projects{
+    font-family: "Funnel Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-size: 3rem;
+
+    
 }
+
+.heading-secondary--projects {
+        margin-block: calc(var(--margin) * 8);
+    }
 
 .heading-secondary--cv {
     font-size: 1.8rem;
@@ -66,11 +72,17 @@ body {
     vertical-align: middle;
 }
 
-.heading-tertiary, .heading-tertiary--cv {
+
+
+.heading-tertiary, .heading-tertiary--cv, .heading-tertiary--popup {
     font-size: 2rem;
     font-weight: 600;
     margin-bottom: calc(var(--margin) * 1.25);
 }
+
+.heading-tertiary--popup {
+        margin-block: calc(var(--margin) * 4);
+    }
 
 .heading-tertiary--cv {
     margin-bottom: 0;
@@ -92,21 +104,25 @@ body {
 .paragraph, .listitem {
     font-size: 1.75rem;
     margin-bottom: calc(var(--margin) * 1.25);
+    hyphens: auto;
 }
 
 .listitem-p {
     list-style: none;
     padding-right: 1rem;
+    hyphens: auto;
 }
 
 .cv__bodytext, .heading-tertiary--cv, .heading-quarternary {
     font-size: 65%;
+    hyphens: auto;
 }
 
 .cv__bodytext {
     margin-bottom: calc(var(--margin) * 2);
     font-style: italic;
     color: var(--grey-mid);
+    hyphens: auto;
 }
 
 .cv__list-item {
