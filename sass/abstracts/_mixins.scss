@@ -23,6 +23,19 @@
     transform: translate(-50%, -50%);
 }
 
+@mixin flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flexCol {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 /* 
 @include respond(tablet-p) {
 

@@ -39,7 +39,6 @@
         transform: translateX(-50%);
         margin-bottom: 0.8rem;
         background-color: var(--grey-light);
-        /* box-shadow: 0rem 0.2rem 0.5rem var(--grey-dark); */
         border-radius: 1rem;
         flex-shrink: 0;
         width: unset;
@@ -54,7 +53,6 @@
     .header {
         position: relative;
         background-color: var(--white);
-        box-shadow: unset;
         margin: 0;
         border: unset;
         border-radius: 0;

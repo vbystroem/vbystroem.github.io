@@ -1,75 +1,106 @@
-
 <!-- 
 
 NOTE: if the repository was grabbed via git, run 
 'npm install' in terminal before making any changes or 
 launching live server, and then compile the sass -->
-    
+
 <!--command to compile sass: 'npm run compilesass', 
 remember to compile before running live server, 
 and keep that terminal open for the duration of session 
 
 -->
-    
+
 <!DOCTYPE html>
 <html lang="sv">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1"
+    />
     <title>Veronica Byström</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Jacquard+24&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-</head>
-<body>
-    <header class="header">        
-        <nav class="header__container">
-            <a class="header__link" href="index.html">Vem?</a>
-            <a class="header__link" href="/html/hur.html">Hur?</a>
-            <a class="header__link" href="/html/varfor.html">Varför?</a>
-        </nav>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jacquard+24&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="header__container">
+        <a class="header__link" href="index.html">Vem?</a>
+        <a class="header__link" href="/html/hur.html">Hur?</a>
+        <a class="header__link" href="/html/varfor.html">Varför?</a>
+      </nav>
     </header>
     <main>
-        <section class="hero">
-            <div class="hero__spinning-card">
-                <img class="hero__spinning-card-face hero__spinning-card-face-front" src="/img/veronicard2.png" alt="Illustration av ett spelkort där Veronica Byström är representerad som drottning i muspekare">
-                <img class="hero__spinning-card-face hero__spinning-card-face-back" src="/img/veronicard_back2.png" alt="Illustration av ett spelkort där Veronica Byström är representerad som drottning i muspekare">
+      <section class="hero">
+        <div class="spincard">
+          <img
+            class="spincard__img spincard__front"
+            src="/img/veronicard2.png"
+            alt="Illustration av ett spelkort där Veronica Byström är representerad som drottning i muspekare"
+          />
+          <img
+            class="spincard__img spincard__back"
+            src="/img/veronicard_back2.png"
+            alt="Illustration av ett spelkort där Veronica Byström är representerad som drottning i muspekare"
+          />
+        </div>
+        <h1 class="heading-primary hero__h1">
+          <span class="heading-primary--main">Veronica Byström</span>
+          <span class="heading-primary--sub"
+            >Frontendutvecklare, UX-specialist</span
+          >
+        </h1>
+      </section>
+      <article class="hobby" id="hobby">
+        <h2 class="heading-secondary hobby__h2">Mina intressen</h2>
+        <ul class="hobby__list">
+          <li class="hobby__listitem">
+            <img class="card" src="/img/veronicard-musik.png" alt="" />
+            <div class="hobby__textbox">
+              <h3 class="heading-tertiary hobby__h3">Musik</h3>
+              <p class="paragraph">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Dolorum optio enim eveniet eligendi minus dolores excepturi
+                nulla? Dicta itaque placeat delectus animi laborum. Officia
+                cumque modi optio culpa porro suscipit?
+              </p>
             </div>
-            <h1 class="heading-primary">
-                <span class="heading-primary--main">Veronica Byström</span>
-                <span class="heading-primary--sub">Frontendutvecklare, UX-specialist</span>
-            </h1>
-        </section>
-        <article class="hobby-article" id="hobby-article">
-            <h2 class="heading-secondary">Mina intressen</h2>
-            <ul class="hobby-article__list">
-                <li class="hobby-article__listitem">
-                    <img class="hobby-article__card" src="/img/veronicard-musik.png"  alt="">
-                    <div class="hobby-article__textbox">
-                        <h3 class="heading-tertiary">Musik</h3>
-                        <p class="paragraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum optio enim eveniet eligendi minus dolores excepturi nulla? Dicta itaque placeat delectus animi laborum. Officia cumque modi optio culpa porro suscipit?</p>
-                    </div>             
-                </li>
-                <li class="hobby-article__listitem">
-                    <img class="hobby-article__card" src="/img/veronicard-anime.png" alt="">
-                    <div class="hobby-article__textbox">
-                        <h3 class="heading-tertiary">Anime</h3>
-                        <p class="paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam possimus ratione est quis soluta obcaecati doloribus, architecto debitis at accusantium eligendi? Suscipit numquam incidunt excepturi minima delectus fugit aspernatur perferendis.</p>
-                    </div>
-                </li>
-                <li class="hobby-article__listitem">
-                    <img class="hobby-article__card" src="/img/veronicard-konst.png" alt="">
-                    <div class="hobby-article__textbox">
-                        <h3 class="heading-tertiary">Fri Konst</h3>
-                        <p class="paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda cum voluptatum dolorum? Itaque temporibus iste provident assumenda id debitis, cupiditate saepe nisi, excepturi quos facere iusto unde enim adipisci in.</p>
-                    </div>
-                </li>
-            </ul>
-        </article>
+          </li>
+          <li class="hobby__listitem">
+            <img class="card" src="/img/veronicard-anime.png" alt="" />
+            <div class="hobby__textbox">
+              <h3 class="heading-tertiary hobby__h3">Anime</h3>
+              <p class="paragraph">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Aperiam possimus ratione est quis soluta obcaecati doloribus,
+                architecto debitis at accusantium eligendi? Suscipit numquam
+                incidunt excepturi minima delectus fugit aspernatur perferendis.
+              </p>
+            </div>
+          </li>
+          <li class="hobby__listitem">
+            <img class="card" src="/img/veronicard-konst.png" alt="" />
+            <div class="hobby__textbox">
+              <h3 class="heading-tertiary hobby__h3">Fri Konst</h3>
+              <p class="paragraph">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Assumenda cum voluptatum dolorum? Itaque temporibus iste
+                provident assumenda id debitis, cupiditate saepe nisi, excepturi
+                quos facere iusto unde enim adipisci in.
+              </p>
+            </div>
+          </li>
+        </ul>
+      </article>
     </main>
-    <footer>
-    </footer>
-</body>
+  </body>
 </html>

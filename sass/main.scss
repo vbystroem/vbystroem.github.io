@@ -7,13 +7,15 @@
 @import "base/typography";
 @import "base/utilities";
 
+@import "components/accordion";
 @import "components/popup";
 @import "components/btn";
+@import "components/card";
 
 @import "layouts/header";
-@import "layouts/accordion";
 
 @import "pages/home";
 @import "pages/cv";
+@import "pages/varfor";
 
 
