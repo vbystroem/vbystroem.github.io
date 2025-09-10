@@ -1,58 +1,83 @@
-.companies {
+.essay {
+  @include flexCol;
 
-    background-color: var(--grey-midlight);
-    width: 100vw;
-    padding-block: 5rem;
+  &__p {
+    width: 90vw;
+  }
+}
+
+.companies {
+  background-color: var(--grey-midlight);
+  width: 100vw;
+  padding-block: 15rem;
+  clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 85%);
 
   &__container {
+    @include flexCol;
     width: 90vw;
     margin: 0 auto;
+  }
 
-    &__list {
-      @include flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: row;
-      flex-wrap: wrap;
-    }
+  &__list {
+    @include flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 
-    &__listitem {
-      width: 90vw;
+  &__listitem {
+    width: 90vw;
+  }
+}
+
+.logo {
+  @include flex;
+  margin: var(--margin);
+  width: 100%;
+
+  &:hover {
+    background-color: purple;
+  }
+
+  &:hover > img {
+    filter: brightness(100);
+  }
+
+  &__img {
+    height: 3rem;
+  }
+}
+
+@include respond(tablet-p) {
+  .companies__container {
+    width: 66.66667vw;
+  }
+
+  .essay {
+    &__p {
+      width: min(66.66667vw, calc(65ch * 2));
+      margin-bottom: 10rem;
     }
+  }
+}
+
+@include respond(tablet-l) {
+  .companies__listitem {
+    width: unset;
   }
 
   .logo {
-    @include flex;
-    margin: var(--margin);
-    width: 100%;
-
-    &:hover {
-      background-color: purple;
-    }
-
-    &:hover > img {
-      filter: brightness(100);
-    }
-
-    &__img {
-      height: 3rem;
-    }
+    width: unset;
   }
+}
 
-  @include respond(tablet-p) {
-    .companies__container {
-      width: 66.66667vw;
-    }
-  }
+@include respond(desktop) {
+  .companies {
+    clip-path: polygon(0 0, 100% 30%, 100% 100%, 0 70%);
 
-  @include respond(tablet-l) {
-    .companies__container {
-      &__listitem {
-        width: unset;
-      }
-    }
-    .logo {
-      width: unset;
+    &__container {
+      width: 50vw;
     }
   }
 }

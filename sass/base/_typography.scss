@@ -67,6 +67,10 @@
     font-size: 1.75rem;
     margin-bottom: calc(var(--margin) * 1.25);
     hyphens: auto;
+
+    &__break {
+        margin-bottom: 1rem;
+    }
 }
 
 /* CV */
@@ -121,4 +125,20 @@
 
 .popup__h3 {
     margin-block: calc(var(--margin) * 4);
+}
+
+/* Essay */
+.essay__p {
+    columns: 1;
+
+    @include respond(tablet-l) {
+        columns: 2;
+    }
+
+}
+
+/* Companies */
+
+.companies__h2 {
+    margin-bottom: 3rem;
 }

@@ -204,6 +204,9 @@ body {
   margin-bottom: calc(var(--margin) * 1.25);
   hyphens: auto;
 }
+.paragraph__break {
+  margin-bottom: 1rem;
+}
 
 /* CV */
 .cv__h1 {
@@ -247,6 +250,21 @@ body {
 /* Popup */
 .popup__h3 {
   margin-block: calc(var(--margin) * 4);
+}
+
+/* Essay */
+.essay__p {
+  columns: 1;
+}
+@media screen and (min-width: 56.25em) {
+  .essay__p {
+    columns: 2;
+  }
+}
+
+/* Companies */
+.companies__h2 {
+  margin-bottom: 3rem;
 }
 
 .accordion {
@@ -711,16 +729,31 @@ body {
   margin: 0;
 }
 
+.essay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.essay__p {
+  width: 90vw;
+}
+
 .companies {
   background-color: var(--grey-midlight);
   width: 100vw;
-  padding-block: 5rem;
+  padding-block: 15rem;
+  clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 85%);
 }
 .companies__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   width: 90vw;
   margin: 0 auto;
 }
-.companies__container__list {
+.companies__list {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -729,36 +762,50 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
 }
-.companies__container__listitem {
+.companies__listitem {
   width: 90vw;
 }
-.companies .logo {
+
+.logo {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: var(--margin);
   width: 100%;
 }
-.companies .logo:hover {
+.logo:hover {
   background-color: purple;
 }
-.companies .logo:hover > img {
+.logo:hover > img {
   filter: brightness(100);
 }
-.companies .logo__img {
+.logo__img {
   height: 3rem;
 }
+
 @media screen and (min-width: 37.5em) {
-  .companies .companies__container {
+  .companies__container {
     width: 66.66667vw;
+  }
+  .essay__p {
+    width: min(66.66667vw, 130ch);
+    margin-bottom: 10rem;
   }
 }
 @media screen and (min-width: 56.25em) {
-  .companies .companies__container__listitem {
+  .companies__listitem {
     width: unset;
   }
-  .companies .logo {
+  .logo {
     width: unset;
+  }
+}
+@media screen and (min-width: 75em) {
+  .companies {
+    clip-path: polygon(0 0, 100% 30%, 100% 100%, 0 70%);
+  }
+  .companies__container {
+    width: 50vw;
   }
 }
 
