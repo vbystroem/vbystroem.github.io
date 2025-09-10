@@ -1,6 +1,10 @@
 .essay {
   @include flexCol;
 
+  &__textbox {
+    width: 90vw
+  }
+
   &__p {
     width: 90vw;
   }
@@ -41,7 +45,7 @@
   }
 
   &:hover > img {
-    filter: brightness(100);
+    
   }
 
   &__img {
@@ -55,9 +59,13 @@
   }
 
   .essay {
-    &__p {
-      width: min(66.66667vw, calc(65ch * 2));
+    &__textbox {
+      width: min(66.66667vw, 130ch);
       margin-bottom: 10rem;
+    }
+
+    &__p {
+      width: 100%;
     }
   }
 }
@@ -80,4 +88,112 @@
       width: 50vw;
     }
   }
+}
+
+/* specific hover colors for brands */
+
+.logo__img--white {
+  height: 3rem;
+  display: none;
+}
+
+.arbetsformedlingen:hover {
+  background-color: #00005a;
+}
+
+.arbetsformedlingen:hover>.logo__img {
+    display: none;
+}
+
+.arbetsformedlingen:hover>.logo__img--white {
+    display: block;
+}
+
+
+.arbetsmiljoverket:hover {background-color: #ffd94d;}
+
+.dramatify:hover {
+  background-color: #2f9ff1;
+}
+
+.dramatify:hover>.logo__img {
+    display: none;
+}
+
+.dramatify:hover>.logo__img--white {
+    display: block;
+}
+
+.ehalsomyndigheten:hover {
+  background-color: #6e0e50;
+}
+
+.ehalsomyndigheten:hover>.logo__img {
+    display: none;
+}
+
+.ehalsomyndigheten:hover>.logo__img--white {
+    display: block;
+}
+
+.endra:hover {background-color: #000000;}
+
+.endra:hover>.logo__img {
+    display: none;
+}
+
+.endra:hover>.logo__img--white {
+    display: block;
+}
+
+.forsakringskassan:hover {background-color: #116a3e;}
+
+.forsakringskassan:hover>.logo__img {
+    display: none;
+}
+
+.forsakringskassan:hover>.logo__img--white {
+    display: block;
+}
+
+.ikea:hover {background-color: #ffdb00;}
+
+.lootlocker:hover {background-color: #436ec6;}
+
+.lootlocker:hover>.logo__img {
+    display: none;
+}
+
+.lootlocker:hover>.logo__img--white {
+    display: block;
+}
+
+.materialexchange:hover {background-color: #14141e;}
+
+.materialexchange:hover>.logo__img {
+    display: none;
+}
+
+.materialexchange:hover>.logo__img--white {
+    display: block;
+}
+
+.rerun:hover {background-color: #212121;}
+
+.rerun:hover>.logo__img {
+    display: none;
+}
+
+.rerun:hover>.logo__img--white {
+    display: block;
+}
+
+.skatteverket:hover {background-color: #003366;}
+
+.skatteverket:hover>.logo__img {
+    display: none;
+}
+
+.skatteverket:hover>.logo__img--white {
+    display: block;
 }

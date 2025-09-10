@@ -156,6 +156,10 @@ body {
   font-weight: 400;
   font-size: 5.5rem;
   font-style: normal;
+  text-shadow: 0.3rem 0.3rem 0 var(--grey-midlight-2);
+  text-align: center;
+  line-height: 2ex;
+  margin-bottom: 5rem;
 }
 @media screen and (min-width: 56.25em) {
   .heading-primary--main {
@@ -167,7 +171,7 @@ body {
   }
 }
 .heading-primary--sub {
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-family: "Funnel Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
@@ -238,7 +242,7 @@ body {
   font-size: 1.75rem;
 }
 .cv__bodytext, .cv__h3, .cv__h4 {
-  font-size: 65%;
+  font-size: 75%;
   hyphens: auto;
 }
 
@@ -253,6 +257,22 @@ body {
 }
 
 /* Essay */
+.vrf__h1sub {
+  text-align: center;
+  margin-bottom: 7.5rem;
+  width: 90vw;
+}
+@media screen and (min-width: 37.5em) {
+  .vrf__h1sub {
+    width: 66.6666667%;
+  }
+}
+@media screen and (min-width: 56.25em) {
+  .vrf__h1sub {
+    width: 50%;
+  }
+}
+
 .essay__p {
   columns: 1;
 }
@@ -735,6 +755,9 @@ body {
   align-items: center;
   flex-direction: column;
 }
+.essay__textbox {
+  width: 90vw;
+}
 .essay__p {
   width: 90vw;
 }
@@ -776,9 +799,6 @@ body {
 .logo:hover {
   background-color: purple;
 }
-.logo:hover > img {
-  filter: brightness(100);
-}
 .logo__img {
   height: 3rem;
 }
@@ -787,9 +807,12 @@ body {
   .companies__container {
     width: 66.66667vw;
   }
-  .essay__p {
+  .essay__textbox {
     width: min(66.66667vw, 130ch);
     margin-bottom: 10rem;
+  }
+  .essay__p {
+    width: 100%;
   }
 }
 @media screen and (min-width: 56.25em) {
@@ -807,6 +830,127 @@ body {
   .companies__container {
     width: 50vw;
   }
+}
+/* specific hover colors for brands */
+.logo__img--white {
+  height: 3rem;
+  display: none;
+}
+
+.arbetsformedlingen:hover {
+  background-color: #00005a;
+}
+
+.arbetsformedlingen:hover > .logo__img {
+  display: none;
+}
+
+.arbetsformedlingen:hover > .logo__img--white {
+  display: block;
+}
+
+.arbetsmiljoverket:hover {
+  background-color: #ffd94d;
+}
+
+.dramatify:hover {
+  background-color: #2f9ff1;
+}
+
+.dramatify:hover > .logo__img {
+  display: none;
+}
+
+.dramatify:hover > .logo__img--white {
+  display: block;
+}
+
+.ehalsomyndigheten:hover {
+  background-color: #6e0e50;
+}
+
+.ehalsomyndigheten:hover > .logo__img {
+  display: none;
+}
+
+.ehalsomyndigheten:hover > .logo__img--white {
+  display: block;
+}
+
+.endra:hover {
+  background-color: #000000;
+}
+
+.endra:hover > .logo__img {
+  display: none;
+}
+
+.endra:hover > .logo__img--white {
+  display: block;
+}
+
+.forsakringskassan:hover {
+  background-color: #116a3e;
+}
+
+.forsakringskassan:hover > .logo__img {
+  display: none;
+}
+
+.forsakringskassan:hover > .logo__img--white {
+  display: block;
+}
+
+.ikea:hover {
+  background-color: #ffdb00;
+}
+
+.lootlocker:hover {
+  background-color: #436ec6;
+}
+
+.lootlocker:hover > .logo__img {
+  display: none;
+}
+
+.lootlocker:hover > .logo__img--white {
+  display: block;
+}
+
+.materialexchange:hover {
+  background-color: #14141e;
+}
+
+.materialexchange:hover > .logo__img {
+  display: none;
+}
+
+.materialexchange:hover > .logo__img--white {
+  display: block;
+}
+
+.rerun:hover {
+  background-color: #212121;
+}
+
+.rerun:hover > .logo__img {
+  display: none;
+}
+
+.rerun:hover > .logo__img--white {
+  display: block;
+}
+
+.skatteverket:hover {
+  background-color: #003366;
+}
+
+.skatteverket:hover > .logo__img {
+  display: none;
+}
+
+.skatteverket:hover > .logo__img--white {
+  display: block;
 }
 
 /*# sourceMappingURL=style.css.map */
