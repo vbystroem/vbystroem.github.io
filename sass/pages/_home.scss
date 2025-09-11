@@ -1,3 +1,7 @@
+main {
+    @include flexCol;
+}
+
 .hero {
     @include flexCol;
     min-height: 100vh;
@@ -50,7 +54,11 @@
 
      
 
-    
+.intro {
+    @include flexCol;
+    width: 90vw;
+    text-align: center
+}
 
 
 .hobby {
