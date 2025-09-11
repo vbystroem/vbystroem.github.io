@@ -1,3 +1,21 @@
+.big-img {
+  height: 45vh;
+  margin-top: 8rem
+}
+
+.music-player {
+  @include flexCol;
+  width: 90vw;
+  margin-block: 3rem;
+
+  @include respond(tablet-p) {
+    width: 66vw
+  }
+  @include respond(tablet-p) {
+    width: 33vw
+  }
+}
+
 .essay {
   @include flexCol;
 

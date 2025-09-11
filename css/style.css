@@ -159,7 +159,7 @@ body {
   text-shadow: 0.3rem 0.3rem 0 var(--grey-midlight-2);
   text-align: center;
   line-height: 2ex;
-  margin-bottom: 5rem;
+  margin-bottom: 1rem;
 }
 @media screen and (min-width: 56.25em) {
   .heading-primary--main {
@@ -174,7 +174,7 @@ body {
   font-size: 2rem;
   font-family: "Funnel Sans", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 400;
+  font-weight: 500;
   font-style: normal;
 }
 
@@ -210,6 +210,25 @@ body {
 }
 .paragraph__break {
   margin-bottom: 1rem;
+}
+
+.linktext {
+  color: var(--black);
+}
+
+em {
+  font-size: 125%;
+  font-weight: 600;
+}
+
+/* Intro */
+.intro__p {
+  max-width: 65ch;
+  margin-bottom: 10rem;
+}
+
+.hobby__h2 {
+  margin-bottom: 3rem;
 }
 
 /* CV */
@@ -251,6 +270,11 @@ body {
   margin-block: calc(var(--margin) * 8);
 }
 
+.companies__p {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
 /* Popup */
 .popup__h3 {
   margin-block: calc(var(--margin) * 4);
@@ -271,6 +295,14 @@ body {
   .vrf__h1sub {
     width: 50%;
   }
+}
+
+.music-player__p {
+  margin-top: 0.5rem;
+  color: var(--grey-mid);
+}
+.music-player__p .linktext {
+  color: var(--grey-mid);
 }
 
 .essay__p {
@@ -540,12 +572,66 @@ body {
     border-radius: 0.5rem;
   }
 }
+.foot {
+  clip-path: polygon(0 0, 100% 15%, 100% 100%, 0% 100%);
+  padding-top: 10rem;
+  height: 33vh;
+  width: 100vw;
+  background-color: var(--grey-midlight);
+  margin-top: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.foot__gh-link {
+  height: 4.5rem;
+  margin-top: 1rem;
+}
+.foot__spaceadder {
+  width: 100vw;
+  height: 200px;
+  background-color: var(--grey-midlight);
+}
+@media screen and (min-width: 37.5em) {
+  .foot {
+    clip-path: polygon(0 0, 100% 25%, 100% 100%, 0% 100%);
+    padding-top: 7rem;
+  }
+}
+@media screen and (min-width: 56.25em) {
+  .foot {
+    clip-path: polygon(0 0, 100% 25%, 100% 100%, 0% 100%);
+    padding-top: 8rem;
+  }
+}
+@media screen and (min-width: 75em) {
+  .foot {
+    clip-path: polygon(0 0, 100% 35%, 100% 100%, 0% 100%);
+    padding-top: 9rem;
+  }
+}
+@media screen and (min-width: 112.5em) {
+  .foot {
+    clip-path: polygon(0 0, 100% 45%, 100% 100%, 0% 100%);
+    padding-top: 10rem;
+  }
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 .hero {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  min-height: 100vh;
+  min-height: 75vh;
 }
 
 .spincard {
@@ -594,6 +680,15 @@ body {
 }
 .spincard__back {
   z-index: 2;
+}
+
+.intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 90vw;
+  text-align: center;
 }
 
 .hobby {
@@ -747,6 +842,30 @@ body {
 .projects__card {
   scale: 85%;
   margin: 0;
+}
+
+.big-img {
+  height: 45vh;
+  margin-top: 8rem;
+}
+
+.music-player {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 90vw;
+  margin-block: 3rem;
+}
+@media screen and (min-width: 37.5em) {
+  .music-player {
+    width: 66vw;
+  }
+}
+@media screen and (min-width: 37.5em) {
+  .music-player {
+    width: 33vw;
+  }
 }
 
 .essay {
